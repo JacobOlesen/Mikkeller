@@ -1,0 +1,40 @@
+/* ----------Font regler---------- */
+h1{
+font-family: "roboto-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40pt;
+}
+
+h2{
+font-family: "roboto-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 25pt;
+}
+
+.orange{
+color: #ED6C1F;
+}
+
+h3{
+font-family: "nitti-typewriter-normal", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h4{
+font-family: "nitti-typewriter-cameo", sans-serif;
+font-weight: 700;
+font-style: normal; 
+font-size: 16pt;
+}
+
+p{
+font-family: "roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+letter-spacing: 2px;
+line-height: 25px;
+font-size: 12pt;
+}
