@@ -89,7 +89,7 @@ margin-right: 15%;
 }
 
 .responsive{
-    width: 20%;
+    width: 22.55%;
 }
 
 
@@ -132,7 +132,7 @@ margin-right: 15%;
 }
 #sommerferie h5{
     color: #ED6C1F;
-    font-size: 30pt;
+    font-size: 35pt;
     margin: 10px;
 }
 #quiz{
@@ -170,7 +170,7 @@ margin-right: 15%;
     margin-top: 15px;
 }
 #takeover h5{
-    font-size: 30pt;
+    font-size: 35pt;
     color: #505127;
     margin: 20px;
 }
@@ -194,7 +194,7 @@ margin-right: 15%;
 /*---------- Breakpoint ----------*/
 @media only screen and (max-width: 1250px) {
     #tasting h5, #takeover h5, #sommerferie h5{
-        font-size: 25pt;
+        font-size: 30pt;
     }
 }
 
@@ -207,14 +207,14 @@ margin-right: 15%;
     }
     
     #tasting h5{
-        font-size: 20pt;
+        font-size: 25pt;
     }
 
     #sommerferie{
         height: 300px;
     }
     #sommerferie h5{
-        font-size: 20pt;
+        font-size: 25pt;
     }
 
     #quiz h5{
@@ -225,7 +225,7 @@ margin-right: 15%;
         height: 400px;
     }
     #takeover h5{
-        font-size: 20pt;
+        font-size: 25pt;
     }
 
 }
@@ -233,10 +233,68 @@ margin-right: 15%;
 @media only screen and (max-width: 980px) {
     .forsideevent{
         background-color: yellow;
+        display: none;
+    }
+    #knapsektion{
+        display: none;
     }
 
+    .mobil-forsideevent{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .responsive{
+        width: 34.2%;
+        margin-top: 20px;
+    }
+    #marked{
+        margin-top: 15px;
+    }
+    #takeover{
+        height: 300px;
+    }
+    #mobil-knapsektion{
+        display: flex;
+        justify-content: center;
+    }
+    #knap{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #jazz h5{
+        font-size: 25pt;
+    }
+    #takeover h5{
+        font-size: 20pt;
+        margin: 5px;
+    }
+    #tasting h5{
+        font-size: 20pt;
+    }
+    #marked h5{
+        font-size: 25pt;
+    }
+    #sommerferie h5{
+        font-size: 23px;
+    }
+}
+
+
+/* Display none på mobil version, når den er bredere end 980px for at gemme den */
+@media only screen and (min-width: 980px) {
+    .mobil-forsideevent{
+        display: none;
+    }
+    #mobil-knapsektion{
+        display: none;
+    }
 
 }
+    
+
 
 
 
