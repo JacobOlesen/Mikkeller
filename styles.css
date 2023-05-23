@@ -1,3 +1,10 @@
+/* Reset: Padding og margin fjernes, margin og border regnes med i bredden */
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
 /* ----------Font regler---------- */
 h1{
 font-family: "roboto-condensed", sans-serif;
@@ -30,6 +37,12 @@ font-style: normal;
 font-size: 16pt;
 }
 
+h5{
+font-family: "roboto-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
 p{
 font-family: "roboto", sans-serif;
 font-weight: 300;
@@ -39,3 +52,143 @@ line-height: 25px;
 font-size: 12pt;
 color: #29304D;
 }
+
+
+/* Den orange linje */
+hr{
+border: solid #ED6C1F 1px;
+margin-left: 15%;
+margin-right: 15%;
+}
+
+
+/* ---------- Event sektion på forsiden ---------- */
+
+
+/* Sektion overskrifter */
+.eventoverskrift{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+#eventhenry{
+    height: 50px;
+}
+.eventsektion{
+    height: 900px;
+    margin-top: 100px;
+}
+
+
+.forsideevent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+
+#jazz{
+    height: 500px;
+    width: 300px;
+    background-color: #505127;
+    border: solid #A39163 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#jazz h5{
+    color: #A8A9AD;
+    font-size: 40pt;
+}
+#tasting{
+    height: 200px;
+    width: 300px;
+    background-color: #FAB393;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tasting h5{
+    color: #ED6C1F;
+    font-size: 30pt;
+}
+#tasting img{
+    height: 100px;
+}
+
+#sommerferie{
+    height: 400px;
+    width: 400px;
+    background-color: #29304D;
+    border: solid #CBCBCB 20px;
+    display: flex;
+    flex-direction: column;
+}
+#sommerferie h5{
+    color: #ED6C1F;
+    font-size: 40pt;
+    margin: 10px;
+}
+#quiz{
+    height: 200px;
+    width: 400px;
+    background-color: #65C5D3;
+    border: solid #0067A1 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quiz h5{
+    font-size: 40pt;
+    color: #ED6C1F;
+}
+#knap{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    border: solid #ED6C1F 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#midte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#marked{
+    height: 200px;
+    width: 300px;
+    background-color: #FFF6B5;
+    border: solid #D0DC54 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+#marked h5{
+    font-size: 30pt;
+    color: #A29C47;
+    margin: 10px;
+}
+#takeover{
+    height: 500px;
+    width: 300px;
+    background-color: #E38F08;
+    border: solid #505127 20px;
+    margin-top: 15px;
+}
+#takeover h5{
+    font-size: 30pt;
+    color: #505127;
+    margin: 20px;
+}
+
