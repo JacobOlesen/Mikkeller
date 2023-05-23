@@ -49,7 +49,7 @@ font-weight: 300;
 font-style: normal;
 letter-spacing: 2px;
 line-height: 25px;
-font-size: 12pt;
+font-size: 10pt;
 }
 
 
@@ -83,16 +83,17 @@ margin-right: 15%;
 .forsideevent{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
     margin-top: 50px;
     gap: 15px;
+}
+
+.responsive{
+    width: 20%;
 }
 
 
 #jazz{
     height: 500px;
-    width: 300px;
     background-color: #505127;
     border: solid #A39163 20px;
     display: flex;
@@ -106,7 +107,6 @@ margin-right: 15%;
 }
 #tasting{
     height: 200px;
-    width: 300px;
     background-color: #FAB393;
     margin-top: 15px;
     display: flex;
@@ -124,7 +124,6 @@ margin-right: 15%;
 
 #sommerferie{
     height: 400px;
-    width: 400px;
     background-color: #29304D;
     border: solid #CBCBCB 20px;
     display: flex;
@@ -132,12 +131,11 @@ margin-right: 15%;
 }
 #sommerferie h5{
     color: #ED6C1F;
-    font-size: 40pt;
+    font-size: 30pt;
     margin: 10px;
 }
 #quiz{
     height: 200px;
-    width: 400px;
     background-color: #65C5D3;
     border: solid #0067A1 20px;
     margin-top: 15px;
@@ -149,24 +147,10 @@ margin-right: 15%;
     font-size: 40pt;
     color: #ED6C1F;
 }
-#knap{
-    height: 50px;
-    width: 100px;
-    margin-top: 15px;
-    border: solid #ED6C1F 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#midte{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 #marked{
     height: 200px;
-    width: 300px;
     background-color: #FFF6B5;
     border: solid #D0DC54 20px;
     display: flex;
@@ -180,7 +164,6 @@ margin-right: 15%;
 }
 #takeover{
     height: 500px;
-    width: 300px;
     background-color: #E38F08;
     border: solid #505127 20px;
     margin-top: 15px;
@@ -190,4 +173,69 @@ margin-right: 15%;
     color: #505127;
     margin: 20px;
 }
+
+#knapsektion{
+    display: flex;
+    justify-content: center;
+}
+
+#knap{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    border: solid #ED6C1F 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+}
+
+/*---------- Breakpoint ----------*/
+@media only screen and (max-width: 1250px) {
+    #tasting h5, #takeover h5, #sommerferie h5{
+        font-size: 25pt;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #jazz{
+        height: 400px;
+    }
+    #jazz h5{
+        font-size: 30pt;
+    }
+    
+    #tasting h5{
+        font-size: 20pt;
+    }
+
+    #sommerferie{
+        height: 300px;
+    }
+    #sommerferie h5{
+        font-size: 20pt;
+    }
+
+    #quiz h5{
+        font-size: 30pt;
+    }
+
+    #takeover{
+        height: 400px;
+    }
+    #takeover h5{
+        font-size: 20pt;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+    .forsideevent{
+        background-color: yellow;
+    }
+
+
+}
+
+
 
