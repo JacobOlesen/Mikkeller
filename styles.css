@@ -240,3 +240,146 @@ margin-right: 15%;
 
 
 
+
+
+/*SEKTION - KOM FORBI - START ---------------------------------------------------------------*/
+.find-os-content{
+    margin: 0 15% 0 15%;
+}
+
+#åbningstider{
+    height: 500px;
+    width: 40%;
+
+    margin-top: 30px;
+    padding-right: 60px;
+
+    background-color: #ED6C1F;
+}
+
+#åbningstider h4{
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+#åbningstider-HL{
+    font-size: 2.5vw;
+    
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+#dag-tid{
+    display: flex;
+}
+
+#ugedage{
+    padding-left: 30px;
+    margin-top: 20px;
+
+    line-height: 40px;
+    
+}
+
+#tider{
+    margin-top: 20px;
+
+    margin-left: 50px;
+
+    line-height: 40px;
+    min-width: 100px;
+    margin-left: 20%;
+}
+
+#dag-tid h3{
+    font-size: 14pt;
+}
+
+#maps-link h3{
+    color: black;
+    text-decoration: underline;
+    
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#maps-link h3:hover{
+    font-family: "nitti-typewriter-cameo";
+}
+
+
+
+#dayOutput{
+    display: none;
+  }
+
+
+
+#aarhus-kort img{
+    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
+    display: flex;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+
+    
+
+}
+
+.find-os-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#åbningstider img{
+    width: 120px;
+    margin-top: -60px;
+
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 980px) {
+    .find-os-content{
+        flex-direction: column;
+    }
+
+    #åbningstider{
+        height: 500px;
+        width: 70%;
+        min-width: 250px;
+    
+        margin-top: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
+    
+        background-color: #ED6C1F;
+
+
+    }
+
+    #åbningstider-HL{
+        font-size: 20pt;
+    }
+
+    #aarhus-kort{
+        display: flex;
+        justify-content: center;
+    }
+
+    #aarhus-kort img{
+        max-width: 800px;
+        min-width: 350px;
+
+        margin-left: -20px;
+    }
+    
+    .find-os-content{
+
+        margin-top: 50px;
+    }
+}   
