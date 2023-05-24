@@ -573,3 +573,28 @@ input[type=text], input[type=password] {
         margin-top: 50px;
     }
 }   
+
+
+
+
+/* Månedens øl banner------------------------------*/
+.static {
+    position:absolute;
+    background: white;
+  }
+  
+  .static:hover { 
+    opacity:0; /**/
+  }
+
+  .active ,.static {
+    width: 70%;
+  }
+
+
+  #månedens-øl{ /**/
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+  }
