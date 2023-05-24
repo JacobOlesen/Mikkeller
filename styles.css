@@ -307,9 +307,133 @@ margin-right: 15%;
     
 
 
+/*SEKTION - KAMPAGNE - START ----------------------------------------------------------------*/
+
+#nedtælling {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+
+}
+
+
+.kampagnetekst {
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6%;
+    margin-left: 15%;
+    margin-top: 50px;
+
+}
+
+
+.kampagnetekst button{
+   
+    background-color:#dedad2;
+    color:#782f2f;
+    font-size: 16px;
+    
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
 
 
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    
+  }
+
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #782f2f;
+  }
+  
+
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+   .signupbtn {
+       width: 100%;
+    }
+  }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 65%;/* Full height */
+    
+    background-color: #dedad2;
+
+    margin-top: 15%;
+    border: 3px solid #782f2f;
+   
+   
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+  }
+
+
+  
 
 /*SEKTION - KOM FORBI - START ---------------------------------------------------------------*/
 .find-os-content{
