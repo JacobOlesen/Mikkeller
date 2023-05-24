@@ -78,6 +78,7 @@ margin-right: 15%;
 .eventsektion{
     height: 900px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -87,6 +88,7 @@ margin-right: 15%;
     margin-top: 50px;
     gap: 15px;
 }
+
 
 .responsive{
     width: 22.55%;
@@ -180,24 +182,40 @@ margin-right: 15%;
     justify-content: center;
 }
 
-#knap{
+.knap{
+    /* højde og brede på boksen, samt tykkelse og farve på border */
     height: 50px;
     width: 100px;
     margin-top: 15px;
     border: solid #ED6C1F 2px;
+    border-radius: 5px;
+
+    /* flex på, så teksten står i midten af boksen */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* minus margin, så den kommer højere op */
     margin-top: -70px;
+    
+    /* Skrift på kanppen */
+    font-family: "roboto-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12pt;
+
 }
 
 /*---------- Breakpoint ----------*/
+
+/* Breakpoint 1 gør skriftstørrelse mindre der hvor det er nødvendigt */
 @media only screen and (max-width: 1250px) {
     #tasting h5, #takeover h5, #sommerferie h5{
         font-size: 30pt;
     }
 }
 
+/* Breakpoint 2 blier der ændret på skriftstørrelse igen, samt højde på nogle af boksene */
 @media only screen and (max-width: 1100px) {
     #jazz{
         height: 400px;
@@ -205,40 +223,34 @@ margin-right: 15%;
     #jazz h5{
         font-size: 30pt;
     }
-    
     #tasting h5{
         font-size: 25pt;
     }
-
     #sommerferie{
         height: 300px;
     }
     #sommerferie h5{
         font-size: 25pt;
     }
-
     #quiz h5{
         font-size: 30pt;
     }
-
     #takeover{
         height: 400px;
     }
     #takeover h5{
         font-size: 25pt;
     }
-
 }
 
+/* Breakpoint 3 - Her forsvinder laptop versionen og mobil versionen kommer frem ved hjælp af "display: none/block" */
 @media only screen and (max-width: 980px) {
     .forsideevent{
-        background-color: yellow;
         display: none;
     }
     #knapsektion{
         display: none;
     }
-
     .mobil-forsideevent{
         display: flex;
         justify-content: center;
@@ -258,11 +270,12 @@ margin-right: 15%;
         display: flex;
         justify-content: center;
     }
-    #knap{
+    .knap{
         margin-top: 10px;
     }
 }
 
+/* Breakpoint 4 bliver der primært ændret på skriftstørrelse og en smule margin */
 @media only screen and (max-width: 650px) {
     #jazz h5{
         font-size: 25pt;
@@ -282,7 +295,6 @@ margin-right: 15%;
     }
 }
 
-
 /* Display none på mobil version, når den er bredere end 980px for at gemme den */
 @media only screen and (min-width: 980px) {
     .mobil-forsideevent{
@@ -291,7 +303,6 @@ margin-right: 15%;
     #mobil-knapsektion{
         display: none;
     }
-
 }
     
 
