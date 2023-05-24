@@ -62,6 +62,117 @@ margin-right: 15%;
 }
 
 
+/* ---------- Header ----------------------*/
+header {
+    background-color: #29304D;
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: fixed;
+    z-index: 2;
+
+  }
+  
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ED6C1F;
+    
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+  }
+
+.logo-hvid-orange img{
+    width: 150px;
+}
+
+.burger-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    nav ul{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        width: 30px;
+    }
+
+}
+
+
+
+
+/*stregens egenskaber*/
+.hover-underline {
+    position: relative;
+  }
+  
+  .hover-underline:after {
+    /*stregen skal være under teksten og kun være så lang som selve teksten*/
+    content: '';
+    position: absolute;
+
+    /*stregen fylder tekstens bredde*/
+    width: 100%;
+
+    /*stregens x(bredde) starter med at være 0*/
+    transform: scaleX(0);
+
+    /*højde på stregen*/
+    height: 2px;
+
+    /*animationen skal starte i bunden i venstre af teksten*/
+    bottom: -3px;
+    left: 0;
+
+    /*stregens farve*/
+    background-color: #ED6C1F;
+
+    /*stregen slutter ud i højre side*/
+    transform-origin: bottom right;
+
+    /*animationen tager 0.25 sekunder*/
+    /*animationen starter hurtigigt og deaccelererer til slut*/
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline:hover::after {
+    /*stregens bredde(x-værdi) er synlig og hele rekstens 
+    bredde, når man stopper med at hover*/
+    transform: scaleX(1);
+
+    /*stregen starter med at forsvinde fra venstre side, 
+    når man stopper med at hover*/
+    transform-origin: bottom left;
+  }
+
+
+
+
+
 /* ---------- Event sektion på forsiden ---------- */
 
 
