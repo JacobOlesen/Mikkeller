@@ -72,16 +72,19 @@ margin-right: 15%;
     margin-right: 15%;
     margin-left: 15%;
 }
+
+/* Henryfigur på sektion linje */
 #eventhenry{
     height: 50px;
 }
+/* Højde på sektionen */
 .eventsektion{
     height: 900px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-
+/* flexbox på laptop version */
 .forsideevent{
     display: flex;
     justify-content: center;
@@ -89,20 +92,29 @@ margin-right: 15%;
     gap: 15px;
 }
 
-
+/* bredde på de 3 div'er så den er respnsive */
 .responsive{
     width: 22.55%;
 }
 
+/* De forskellige bokses individuelle styles */
+#jazz, #tasting, #sommerferie, #quiz, #marked{
+    display: flex;
+}
+#jazz, #tasting, #quiz{
+    justify-content: center;
+}
+#jazz, #tasting, #sommerferie, #marked{
+    flex-direction: column;
+}
+#jazz, #tasting, #quiz{
+    align-items: center;
+}
 
 #jazz{
     height: 500px;
     background-color: #505127;
     border: solid #A39163 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #jazz h5{
     color: #A8A9AD;
@@ -112,10 +124,6 @@ margin-right: 15%;
     height: 200px;
     background-color: #FAB393;
     margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #tasting h5{
     color: #ED6C1F;
@@ -124,13 +132,10 @@ margin-right: 15%;
 #tasting img{
     height: 100px;
 }
-
 #sommerferie{
     height: 400px;
     background-color: #29304D;
     border: solid #CBCBCB 20px;
-    display: flex;
-    flex-direction: column;
 }
 #sommerferie h5{
     color: #ED6C1F;
@@ -142,22 +147,15 @@ margin-right: 15%;
     background-color: #65C5D3;
     border: solid #0067A1 20px;
     margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #quiz h5{
     font-size: 40pt;
     color: #ED6C1F;
 }
-
-
 #marked{
     height: 200px;
     background-color: #FFF6B5;
     border: solid #D0DC54 20px;
-    display: flex;
-    flex-direction: column;
     text-align: right;
 }
 #marked h5{
@@ -177,11 +175,11 @@ margin-right: 15%;
     margin: 20px;
 }
 
+/* Flex på kanppen, så teksten står i midten af boksen */
 #knapsektion{
     display: flex;
     justify-content: center;
 }
-
 .knap{
     /* højde og brede på boksen, samt tykkelse og farve på border */
     height: 50px;
@@ -203,7 +201,6 @@ margin-right: 15%;
     font-weight: 700;
     font-style: normal;
     font-size: 12pt;
-
 }
 
 /*---------- Breakpoint ----------*/
