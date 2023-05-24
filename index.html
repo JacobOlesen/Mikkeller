@@ -197,18 +197,12 @@
 
                 <img src="images/kampagnebilled1.png" alt="billed af nogle flasker">
 
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">TILMELD NYHEDSBREV</button>
-
-
-                <div id="id01" class="modal">
+                <button id="myBtn" >TILMELD NYHEDSBREV</button>
+                
+                <div id="myModal" class="modal">
+                    <div class="container">
             
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            
-                    <form class="modal-content" action="/action_page.php">
-            
-                      <div class="container">
-            
-            
+                        <span class="close">&times;</span>
                         <h1>DELTAG HER</h1>
                         <p>Udfyld formularen nedenfor for at deltage i konkurrencen</p>
                         <hr>
@@ -224,6 +218,14 @@
                         <button type="submit" class="signupbtn">TILMELD</button>
   
                         </div>
+                    </div>
+
+
+                <div id="id01" class="modal">
+            
+            
+            
+                      
                     
                     </div>
                   </form>

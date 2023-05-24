@@ -391,7 +391,9 @@ input[type=text], input[type=password] {
     top: 15px;
     font-size: 40px;
     font-weight: bold;
-    color: #782f2f;
+    color: #ff0000;
+    z-index: 99;
+    display: block;
   }
   
 
@@ -551,8 +553,6 @@ input[type=text], input[type=password] {
         margin-right: 15%;
     
         background-color: #ED6C1F;
-
-
     }
 
     #åbningstider-HL{
