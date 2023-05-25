@@ -62,6 +62,148 @@ margin-right: 15%;
 }
 
 
+/* ---------- Header ----------------------*/
+/*Egenskaber for headeren på alle undersider og når forsiden er scrolled*/
+header {
+    background-color: #29304D;
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: fixed;
+    z-index: 2;
+  }
+  
+/*På forsiden er der ikke nogle baggrund*/
+  #header-forside {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out; /*Giver en smoot overgang */
+  }
+
+/*Først når der er scrolled mere end 100px (JavaScript, træder denne regel i kraft og giver baggrundsfarve*/
+  #header-forside.scrolled {
+    background-color: #29304D;
+  }
+
+/*Det samme sker her - Tekstfarven på nav'en er i staten hvide*/
+  #header-forside nav ul li a{
+    color: #f3f3f3;
+    transition: color 0.3s ease-in-out; /*Giver en smoot overgang */
+  }
+
+/*Når der er scrolled mere end 100px (JavaScript, træder denne regel i kraft og ændrer farven*/
+#header-forside nav ul li a.scrolled {
+    color: #ED6C1F;  
+  }
+
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+  }
+  
+  /*Giver menupunkterne plads imellem sig*/
+  nav ul li {
+    margin-left: 30px;
+    
+  }
+  
+  /*Genrelle regler for menupunkterne*/
+  nav ul li a {
+    text-decoration: none;
+    color: #ED6C1F;
+    
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+  }
+
+
+
+.logo-hvid-orange img{
+    width: 150px;
+}
+
+/*Burger-menuen vises ikke - får display block i media query*/
+.burger-menu{
+    display: none;
+}
+
+.forside-bg{
+    width: 100%;
+    filter: brightness(60%);
+}
+
+
+@media only screen and (max-width: 1023px) {
+    nav ul{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        width: 30px;
+    }
+
+}
+
+/*stregens egenskaber*/
+.hover-underline {
+    position: relative;
+  }
+  
+  .hover-underline:after {
+    /*stregen skal være under teksten og kun være så lang som selve teksten*/
+    content: '';
+    position: absolute;
+
+    /*stregen fylder tekstens bredde*/
+    width: 100%;
+
+    /*stregens x(bredde) starter med at være 0*/
+    transform: scaleX(0);
+
+    /*højde på stregen*/
+    height: 2px;
+
+    /*animationen skal starte i bunden i venstre af teksten*/
+    bottom: -3px;
+    left: 0;
+
+    /*stregens farve*/
+    background-color: #ED6C1F;
+
+    /*stregen slutter ud i højre side*/
+    transform-origin: bottom right;
+
+    /*animationen tager 0.25 sekunder*/
+    /*animationen starter hurtigigt og deaccelererer til slut*/
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline:hover::after {
+    /*stregens bredde(x-værdi) er synlig og hele rekstens 
+    bredde, når man stopper med at hover*/
+    transform: scaleX(1);
+
+    /*stregen starter med at forsvinde fra venstre side, 
+    når man stopper med at hover*/
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+/* ---------- Event sektion på forsiden ---------- */
 /* ---------- Event sektion på forsiden - Jacob ---------- */
 
 
@@ -319,31 +461,93 @@ margin-right: 15%;
 
     display: flex;
     justify-content: space-between;
-    margin-right: 6%;
+    margin-right: 15%;
     margin-left: 15%;
     margin-top: 50px;
 
 }
 
 
+@media only screen and (max-width: 1250px){
+    .kampagnetekst p{
+        font-size: 12px;
+
+    }
+
+    .vl {
+        display: none;
+    }
+}
+
+
+.kælderdruk p{
+
+    padding-right: 10%;
+    margin-top: 40px;
+
+}
+.kampagnetekst img{
+    width: 100%;
+    min-width: 350px;
+    margin-top: 80px;
+    
+    
+}
+
 .kampagnetekst button{
    
-    background-color:#dedad2;
-    color:#782f2f;
-    font-size: 16px;
-    
+    font-size: 20px;
+    font-family: "roboto-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ED6C1F;
+    background-color: white;
 
-    border: 1px;
-    border-radius: 12px;
+    border: solid #ED6C1F 2px;
+    border-radius: 5px;
     
 
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-    cursor: pointer;
+    margin: 12%;
+   
+
   }
+
+
+  .vl {
+    border-left: 2px solid #29304D;
+    height: 530px;
+    margin-top: 7%;
+    padding-right: 8%;
+  }
+
+
+    
+
+
+@media only screen and (max-width: 980px){
+
+    .kampagnetekst{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kampagnetekst img{
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    .kampagnetekst button{
+      margin: 0%;
+      margin-left: 30%;
+    }
+
+  
+
+}
+
 
 
 
@@ -355,6 +559,7 @@ input[type=text], select {
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
+    border: 3px solid #ED6C1F;
   }
   
 
@@ -364,20 +569,37 @@ input[type=text], input[type=password] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
+  
+    border: 1px solid #ED6C1F;
     
   }
 
-  
+
   /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
+    
   }
   
   /* Add padding to container elements */
   .container {
     padding: 16px;
+    margin: 10%;
+    font-family: "nitti-typewriter-normal", sans-serif;
+  }
+
+  @media screen and (max-width: 980px){
+
+.container{
+    margin: 0%;
+}
+
+.kampagnetekst button{
+    margin: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
   }
   
    
@@ -388,7 +610,7 @@ input[type=text], input[type=password] {
     top: 15px;
     font-size: 40px;
     font-weight: bold;
-    color: #ff0000;
+    color: #29304D;
     z-index: 99;
     display: block;
   }
@@ -400,6 +622,9 @@ input[type=text], input[type=password] {
    .signupbtn {
        width: 100%;
     }
+
+   
+
   }
 
 
@@ -408,16 +633,18 @@ input[type=text], input[type=password] {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    
+
+    margin: 20%;
     left: 0;
     top: 0;
     width: 60%; /* Full width */
     height: 65%;/* Full height */
     
-    background-color: #dedad2;
+    background-color: white;
 
     margin-top: 15%;
-    border: 3px solid #782f2f;
+    border: 3px solid #29304D;
    
    
     
@@ -431,6 +658,12 @@ input[type=text], input[type=password] {
     height: 600px;
   }
 
+  .modal button{
+
+    margin: 0%;
+    margin-left: 25%;
+   
+  }
 
   
 
