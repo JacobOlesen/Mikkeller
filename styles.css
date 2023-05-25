@@ -448,6 +448,11 @@ header {
 
 /*SEKTION - KAMPAGNE - START ----------------------------------------------------------------*/
 
+
+.kampagne{
+    margin-top: 10%;
+}
+
 #nedtælling {
     display: flex;
     justify-content: space-between;
@@ -469,14 +474,16 @@ header {
 
 
 @media only screen and (max-width: 1250px){
-    .kampagnetekst p{
-        font-size: 12px;
+    
 
-    }
-
+    
     .vl {
         display: none;
     }
+
+ 
+
+
 }
 
 
@@ -486,13 +493,7 @@ header {
     margin-top: 40px;
 
 }
-.kampagnetekst img{
-    width: 100%;
-    min-width: 350px;
-    margin-top: 80px;
-    
-    
-}
+
 
 .kampagnetekst button{
    
@@ -508,9 +509,9 @@ header {
     
 
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    margin: 12%;
+    margin-top: 5%;
+
    
 
   }
@@ -524,22 +525,34 @@ header {
   }
 
 
-    
+.kampagneflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.kampagneflex img {
+    width: 400px;
+    margin-top: 20%;
+}
 
 
-@media only screen and (max-width: 980px){
+
+
+@media only screen and (max-width: 1200px){
 
     .kampagnetekst{
         display: flex;
         flex-wrap: wrap;
+
     }
 
-    .kampagnetekst img{
-        justify-content: center;
-        padding-left: 0%;
+    .kampagneflex img{
+        width: 100%;
+        
     }
 
-  
+   
 
 }
 
@@ -569,7 +582,7 @@ input[type=text], input[type=password] {
     
   }
 
-  
+
   /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
     float: left;
@@ -581,6 +594,7 @@ input[type=text], input[type=password] {
   .container {
     padding: 16px;
     margin: 10%;
+    font-family: "nitti-typewriter-normal", sans-serif;
   }
 
   @media screen and (max-width: 980px){
@@ -588,6 +602,8 @@ input[type=text], input[type=password] {
 .container{
     margin: 0%;
 }
+
+
   }
   
    
@@ -610,6 +626,9 @@ input[type=text], input[type=password] {
    .signupbtn {
        width: 100%;
     }
+
+   
+
   }
 
 
@@ -793,26 +812,100 @@ input[type=text], input[type=password] {
 }   
 
 
+/* ---------- Menu underside - Jacob ---------- */
 
-
-/* Månedens øl banner------------------------------*/
+/* Månedens øl banner */
 .static {
     position:absolute;
     background: white;
   }
-  
   .static:hover { 
     opacity:0; /**/
   }
-
   .active ,.static {
     width: 70%;
   }
-
-
   #månedens-øl{ /**/
     display: flex;
     justify-content: center;
 
-    margin-top: 100px;
+    padding-top: 150px;
   }
+
+
+ /* OM MIKKELLER------------------------------*/ 
+/* Knapperne */
+
+.menu .eventoverskrift{
+    margin-top: 50px;
+}
+
+#myBtnContainer{
+    text-align: right;
+    margin-right: 15%;
+}
+
+.btn{
+border: none;
+background-color: white;
+font-family: "nitti-typewriter-normal", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5vw;
+margin: 10px;
+}
+.btn:hover {
+    font-family: "nitti-typewriter-cameo", sans-serif;
+    font-weight: 700;
+  }
+
+  .btn.aktiv {
+    font-family: "nitti-typewriter-cameo", sans-serif;
+    font-weight: 700;
+  }
+
+.oel-menu hr{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.menu h3, .menu h4{
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu h3{
+    font-size: 2.3vw;
+}
+.menu h4{
+    font-size: 1,6vw;
+}
+.oel-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.oel-menu img{
+    width: 90%;
+    padding-left: 30px;
+}
+.filterDiv {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+
+
+  
+
+
