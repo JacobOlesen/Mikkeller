@@ -539,6 +539,11 @@ header {
         padding-left: 0%;
     }
 
+    .kampagnetekst button{
+      margin: 0%;
+      margin-left: 30%;
+    }
+
   
 
 }
@@ -569,7 +574,7 @@ input[type=text], input[type=password] {
     
   }
 
-  
+
   /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
     float: left;
@@ -581,6 +586,7 @@ input[type=text], input[type=password] {
   .container {
     padding: 16px;
     margin: 10%;
+    font-family: "nitti-typewriter-normal", sans-serif;
   }
 
   @media screen and (max-width: 980px){
@@ -588,6 +594,12 @@ input[type=text], input[type=password] {
 .container{
     margin: 0%;
 }
+
+.kampagnetekst button{
+    margin: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
   }
   
    
@@ -610,6 +622,9 @@ input[type=text], input[type=password] {
    .signupbtn {
        width: 100%;
     }
+
+   
+
   }
 
 
