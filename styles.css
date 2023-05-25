@@ -127,7 +127,6 @@ header {
   }
 
 
-
 .logo-hvid-orange img{
     width: 150px;
 }
@@ -141,6 +140,7 @@ header {
     width: 100%;
     filter: brightness(60%);
 }
+
 
 
 @media only screen and (max-width: 1023px) {
