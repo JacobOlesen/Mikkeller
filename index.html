@@ -15,12 +15,13 @@
         <div class="logo-hvid-orange">
           <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
         </div>
+        
         <nav>
           <ul>
             <li><a class="hover-underline" href="menu.html">Menu</a></li>
             <li><a class="hover-underline" href="events.html">Events</a></li>
             <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
-            <li><a class="hover-underline" href="opening.html">Åbningstider</a></li>
+            <li><a class="hover-underline" href="#find-os-sektion">Åbningstider</a></li>
             <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
           </ul>
         </nav>
@@ -30,13 +31,30 @@
                 <img src="images/burger-menu.svg" alt="">
             </a>
         </div>
+    
       </header>
+
+      <!--
+      <div class="dropdown-menu">
+        <ul>
+            <li><a class="hover-underline" href="menu.html">Menu</a></li>
+            <li><a class="hover-underline" href="events.html">Events</a></li>
+            <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
+            <li><a class="hover-underline" href="opening.html">Åbningstider</a></li>
+            <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
+          </ul>
+    </div>
+    -->
 
     <section>
         <div class="forside-bg">
             <div>
-                <h2>MIKKELLER BAR AARHUS</h2>
-                <h1>FIRST AND FOREMOST BEER</h1>
+                <div class="tracking-in-expand-fwd-bottom">
+                    <h2>MIKKELLER BAR AARHUS</h2>
+                </div>
+                <div class="tracking-in-expand-fwd">
+                    <h1>FIRST AND FOREMOST BEER</h1>
+                </div>
             </div>
         </div>
         
@@ -294,7 +312,7 @@
 
 
 
-    <section class="find-os-sektion">
+    <section id="find-os-sektion">
         <div>
             <div class="eventoverskrift">
                 <h2 class="orange">FIND OS</h2>
@@ -338,6 +356,48 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sektion">
+                <h3>KONTAKT</h3>
+                <p>+45 31 17 25 62 </p>
+                <p>mikkelleraarhus@mikkeller.dk</p>
+                <p>Jægergårdsgade 61, Aarhus C</p>
+            </div>
+            <div class="footer-sektion">
+                <h3>Åbningstider</h3>
+                <div class="dag-tid">
+                    <div>
+                        <p>Mandag</p>
+                        <p>Tirsdag</p>
+                        <p>Onsdag</p>
+                        <p>Torsdag</p>
+                        <p>Fredag</p>
+                        <p>Lørdag</p>
+                        <p>Søndag</p>
+                    </div>
+                    <div>
+                        <p>15.00 - 23.00</p>
+                        <p>15.00 - 23.00</p>
+                        <p>15.00 - 00.00</p>
+                        <p>14.00 - 01.00</p>
+                        <p>13.00 - 02.00</p>
+                        <p>12.00 - 02.00</p>
+                        <p>15.00 - 23.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sektion">
+                <h3>Tilmeld dig vores</h3>
+                <h3>nyhedsbrev</h3>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Din email" required>
+                    <button type="submit">Tilmeld</button>
+                  </form>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>

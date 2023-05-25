@@ -194,3 +194,9 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+
+document.querySelector('.burger-menu').addEventListener('click', function() {
+  document.querySelector('.dropdown-menu').classList.toggle('active');
+});
