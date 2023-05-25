@@ -843,6 +843,7 @@ input[type=text], input[type=password] {
 #myBtnContainer{
     text-align: right;
     margin-right: 15%;
+    margin-bottom: 50px;
 }
 
 .btn{
@@ -884,7 +885,7 @@ margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     margin-top: 0px;
     margin-left: 15%;
     margin-right: 15%;
