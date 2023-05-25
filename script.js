@@ -86,7 +86,7 @@ window.onclick = function(event) {
 
 
 
-//-------------------------------------------------------------
+//---------MODAL-------------------------------------------------
 
 
 // Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
@@ -114,3 +114,36 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+//---------Header scroll forside-------------------------------------------------
+//Laver en const ud fra header i HTML
+const header = document.querySelector('header');
+
+
+//Laver en event listener til selve vinduet ved hjælp af scroll
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY; //Den nye const scrollPosition lytter til hvor vinduet er på y aksen ift. scroll
+  if (scrollPosition > 100) { //Hvis scrollPosition opdager at vinduet er scrollet mere end 100px ned, tilføjer den 'Scrolled' clasen til header
+    header.classList.add('scrolled');
+  } else { //Hvis ikke der er scrollet mere end 100px ned, så er 'Scrolled' clasen fjernet fra headeren
+    header.classList.remove('scrolled');
+  }
+});
+
+
+
+const navLinks = document.querySelectorAll('header nav ul li a');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  navLinks.forEach((link) => {
+    if (scrollPosition > 100) {
+      link.classList.add('scrolled');
+    } else {
+      link.classList.remove('scrolled');
+    }
+  });
+});
