@@ -319,31 +319,88 @@ margin-right: 15%;
 
     display: flex;
     justify-content: space-between;
-    margin-right: 6%;
+    margin-right: 15%;
     margin-left: 15%;
     margin-top: 50px;
 
 }
 
 
+@media only screen and (max-width: 1250px){
+    .kampagnetekst p{
+        font-size: 12px;
+
+    }
+
+    .vl {
+        display: none;
+    }
+}
+
+
+.kælderdruk p{
+
+    padding-right: 10%;
+    margin-top: 40px;
+
+}
+.kampagnetekst img{
+    width: 100%;
+    min-width: 350px;
+    margin-top: 80px;
+    
+    
+}
+
 .kampagnetekst button{
    
-    background-color:#dedad2;
-    color:#782f2f;
-    font-size: 16px;
-    
+    font-size: 20px;
+    font-family: "roboto-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ED6C1F;
+    background-color: white;
 
-    border: 1px;
-    border-radius: 12px;
+    border: solid #ED6C1F 2px;
+    border-radius: 5px;
     
 
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-    cursor: pointer;
+    margin: 12%;
+   
+
   }
+
+
+  .vl {
+    border-left: 2px solid #29304D;
+    height: 530px;
+    margin-top: 7%;
+    padding-right: 8%;
+  }
+
+
+    
+
+
+@media only screen and (max-width: 980px){
+
+    .kampagnetekst{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kampagnetekst img{
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+  
+
+}
+
 
 
 
@@ -355,6 +412,7 @@ input[type=text], select {
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
+    border: 3px solid #ED6C1F;
   }
   
 
@@ -364,7 +422,8 @@ input[type=text], input[type=password] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
+  
+    border: 1px solid #ED6C1F;
     
   }
 
@@ -373,11 +432,20 @@ input[type=text], input[type=password] {
   .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
+    
   }
   
   /* Add padding to container elements */
   .container {
     padding: 16px;
+    margin: 10%;
+  }
+
+  @media screen and (max-width: 980px){
+
+.container{
+    margin: 0%;
+}
   }
   
    
@@ -388,7 +456,7 @@ input[type=text], input[type=password] {
     top: 15px;
     font-size: 40px;
     font-weight: bold;
-    color: #ff0000;
+    color: #29304D;
     z-index: 99;
     display: block;
   }
@@ -408,16 +476,18 @@ input[type=text], input[type=password] {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    
+
+    margin: 20%;
     left: 0;
     top: 0;
     width: 60%; /* Full width */
     height: 65%;/* Full height */
     
-    background-color: #dedad2;
+    background-color: white;
 
     margin-top: 15%;
-    border: 3px solid #782f2f;
+    border: 3px solid #29304D;
    
    
     
@@ -431,6 +501,12 @@ input[type=text], input[type=password] {
     height: 600px;
   }
 
+  .modal button{
+
+    margin: 0%;
+    margin-left: 25%;
+   
+  }
 
   
 
