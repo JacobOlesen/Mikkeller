@@ -137,10 +137,29 @@ header {
 }
 
 .forside-bg{
-    width: 100%;
-    filter: brightness(60%);
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-image: url(images/forside-bg1.1.jpg);
 }
 
+.forside-bg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .forside-bg h1{
+        font-size: 30px;
+    }
+    .forside-bg h2{
+        font-size: 20px;
+    }
+}
 
 
 @media only screen and (max-width: 1023px) {

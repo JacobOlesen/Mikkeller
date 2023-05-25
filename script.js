@@ -53,31 +53,31 @@ let day = d.getDay()
 // === kaldes også "strict equality" fordi det ikke kun sammenligner værdierne, men også typerne af de sammenlignede værdier. 
 if (day === 1) {
   document.getElementById("man").style.fontFamily = "nitti-typewriter-cameo"; //Referer til id="man" som er kolonnen med ugedagene
-  document.getElementById("man1").style.fontFamily = "nitti-typewriter-cameo";//Referer til id="man1" som er kolonnen med klokkeslettet
+  document.getElementById("man-tid").style.fontFamily = "nitti-typewriter-cameo";//Referer til id="man1" som er kolonnen med klokkeslettet
 }
 if (day === 2) {
   document.getElementById("tir").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("tir1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("tir-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 if (day === 3) {
   document.getElementById("ons").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("ons1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("ons-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 if (day === 4) {
   document.getElementById("tor").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("tor1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("tor-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 if (day === 5) {
   document.getElementById("fre").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("fre1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("fre-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 if (day === 6) {
   document.getElementById("lør").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("lør1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("lør-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 if (day === 0) {
   document.getElementById("søn").style.fontFamily = "nitti-typewriter-cameo";
-  document.getElementById("søn1").style.fontFamily = "nitti-typewriter-cameo";
+  document.getElementById("søn-tid").style.fontFamily = "nitti-typewriter-cameo";
 }
 
 
