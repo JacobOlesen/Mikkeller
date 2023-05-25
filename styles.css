@@ -825,7 +825,7 @@ input[type=text], input[type=password] {
     display: flex;
     justify-content: center;
 
-    margin-top: 100px;
+    padding-top: 150px;
   }
 
 /* Knapperne */
