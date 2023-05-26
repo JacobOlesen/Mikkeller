@@ -906,6 +906,24 @@ margin: 10px;
 
 
 
-  
 
+
+#omoverskrift {
+    padding-top: 10%;
+}
+
+.ommikkeller {
+    
+
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+
+
+
+  
 
