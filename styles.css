@@ -62,6 +62,10 @@ margin-left: 15%;
 margin-right: 15%;
 }
 
+body{
+    background-color: #f2f2f2;
+}
+
 
 /* ---------- Header ----------------------*/
 /*Egenskaber for headeren på alle undersider og når forsiden er scrolled*/
@@ -146,12 +150,28 @@ header {
     
 }
 
-.forside-bg{
+.forside-text{
     justify-content: center;
     align-items: center;
     display: flex;
     color: white;
     text-align: center;
+    padding-top: 340px;
+}
+
+.arrow-box{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+    
+}
+
+.scroll-arrow{
+    z-index: 1;
+    width: 35px;
+    
+    
 }
 
 .tracking-in-expand-fwd {
@@ -175,7 +195,7 @@ header {
 
 
   .tracking-in-expand-fwd-bottom {
-	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
 }
 @keyframes tracking-in-expand-fwd-bottom {
     0% { /*Når animationen starter*/
@@ -260,26 +280,6 @@ header {
     når man stopper med at hover*/
     transform-origin: bottom left;
   }
-
-
-/*
-.dropdown-menu{
-    height: 0px;
-    background-color:blue;
-    z-index: 3;
-    display: none;
-}
-
-.dropdown-menu.active{
-    width: 100%;
-    height: 500px;
-    background-color: red;
-    position: absolute;
-    z-index: 3;
-    display: block;
-    
-*/
-
 
 
 
