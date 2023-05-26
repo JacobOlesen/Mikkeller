@@ -1002,9 +1002,15 @@ margin: 10px;
     justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 5%;
 
 
 }
+
+.ommikkeller img {
+    max-width: 100%;
+}
+
 
 
 
