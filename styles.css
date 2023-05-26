@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior: smooth;
   }
 
 /* ----------Font regler - Fælles ---------- */
@@ -137,10 +138,70 @@ header {
 }
 
 .forside-bg{
-    width: 100%;
-    filter: brightness(60%);
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-image: url(images/forside-bg1.2jpg.jpg);
+    
 }
 
+.forside-bg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.tracking-in-expand-fwd {
+	animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -1em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+
+  .tracking-in-expand-fwd-bottom {
+	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+@keyframes tracking-in-expand-fwd-bottom {
+    0% { /*Når animationen starter*/
+      letter-spacing: -0.5em; /*Bogstaverne er oven i hinanden*/
+      transform: translateZ(-10px) translateY(50px); /*Bag ved anden tekst og 50px nede*/
+      opacity: 0; 
+    }
+    40% {
+      opacity: 0.6; 
+    }
+    100% {
+      transform: translateZ(0) translateY(0); /*Efter de 0.8 sek er teksen lige langt fremme som anden tekst op på sin rette plads ift højde*/
+      opacity: 1; /*Teksten er helt synlig*/
+    }
+  }
+
+
+
+@media only screen and (max-width: 980px) {
+    .forside-bg h1{
+        font-size: 30px;
+    }
+    .forside-bg h2{
+        font-size: 20px;
+    }
+}
 
 
 @media only screen and (max-width: 1023px) {
@@ -151,6 +212,7 @@ header {
     .burger-menu{
         display: block;
         width: 30px;
+        z-index: 5;
     }
 
 }
@@ -198,6 +260,25 @@ header {
     når man stopper med at hover*/
     transform-origin: bottom left;
   }
+
+
+/*
+.dropdown-menu{
+    height: 0px;
+    background-color:blue;
+    z-index: 3;
+    display: none;
+}
+
+.dropdown-menu.active{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    
+*/
 
 
 
@@ -674,6 +755,7 @@ input[type=text], input[type=password] {
 /*SEKTION - KOM FORBI - START ---------------------------------------------------------------*/
 .find-os-content{
     margin: 0 15% 0 15%;
+    margin-bottom: 80px;
 }
 
 #åbningstider{
@@ -843,6 +925,7 @@ input[type=text], input[type=password] {
 #myBtnContainer{
     text-align: right;
     margin-right: 15%;
+    margin-bottom: 50px;
 }
 
 .btn{
@@ -884,7 +967,7 @@ margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     margin-top: 0px;
     margin-left: 15%;
     margin-right: 15%;
@@ -925,5 +1008,61 @@ margin: 10px;
 
 
 
+/*-----Footer-----------------------------------------------*/
   
+footer{
+    width: 100%;
+    height:300px;
+    background-color: #29304D;
+}
 
+footer h3{
+    color: #ED6C1F;
+}
+
+footer p{
+    font-size: 10pt;
+    color: #ED6C1F;
+}
+
+footer h3{
+    font-size: 16pt;
+}
+
+
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    
+}
+
+footer .dag-tid{
+    display: flex;
+}
+
+footer .dag-tid div{
+    margin-right: 20px;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footer-sektion{
+        margin-bottom: 50px;
+    }
+}
