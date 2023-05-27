@@ -402,8 +402,10 @@ header {
 #knapsektion{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: #ED6C1F;
 }
-.knap{
+.knap {
     /* højde og brede på boksen, samt tykkelse og farve på border */
     height: 50px;
     width: 100px;
@@ -425,6 +427,7 @@ header {
     font-style: normal;
     font-size: 12pt;
 }
+
 
 /*---------- Breakpoint ----------*/
 
@@ -489,6 +492,8 @@ header {
     #mobil-knapsektion{
         display: flex;
         justify-content: center;
+        text-decoration: none;
+        color: #ED6C1F;
     }
     .knap{
         margin-top: 10px;
