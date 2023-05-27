@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
   }
 
-  
+
 /* Baggrundfarve på alt */
 body{
     background-color: #f2f2f2;
@@ -143,6 +143,18 @@ header {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .forside-bg{
     width: 100vw;
     height: 100vh;
@@ -173,42 +185,43 @@ header {
 }
 
 
-
-.tracking-in-expand-fwd {
-	animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+/*Tekst forside animation - "FIRST AND FOREMOST BEER"*/
+/*Kilde: https://animista.net*/
+.aniamtion-ud {  /*animationens class navn som sættes på HTML elementet*/
+	animation: aniamtion-ud 1s; /*Animationen varer 1 sekund */
 }
 
-@keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -1em;
-      transform: translateZ(-700px);
-      opacity: 0;
+@keyframes aniamtion-ud { /*keyframes linkes til class name*/
+    0% { /*Når animationen starter*/
+      letter-spacing: -1em; /*Bogstaverne står oven i hinanden*/
+      opacity: 0; /*Teksten er helt genemsigtig*/
     }
-    40% {
+    40% { /*Når 40% af aniamtionen er loadet får teksten 60% synlighed*/
       opacity: 0.6;
     }
-    100% {
-      transform: translateZ(0);
-      opacity: 1;
+    100% { /*Når animationen er loadet færdig*/
+      opacity: 1; /*Teksten er nu fyld synlig*/
     }
   }
 
 
-  .tracking-in-expand-fwd-bottom {
-	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+
+/*Tekst forside animation - "MIKKELLER BAR AARHUS"*/
+/*Kilde: https://animista.net*/
+  .aniamtion-op-ud {
+	animation: aniamtion-op-ud 0.8s 0.7s both; /*0.8 sekunders delay og varer 0.7 sekunder */
 }
-@keyframes tracking-in-expand-fwd-bottom {
+@keyframes aniamtion-op-ud {
     0% { /*Når animationen starter*/
-      letter-spacing: -0.5em; /*Bogstaverne er oven i hinanden*/
-      transform: translateZ(-10px) translateY(50px); /*Bag ved anden tekst og 50px nede*/
-      opacity: 0; 
+      letter-spacing: -10px; /*Bogstaverne er mast sammen oven i hinanden*/
+      transform: translateY(50px); /*Treksten starter med atvære placeret 50px nede på Y-aksen*/
+      opacity: 0; /*Teksten er helt genemsigtig og kan ikke ses*/
     }
     40% {
-      opacity: 0.6; 
+      opacity: 0.6; /*Når 40% af aniamtionen er loadet får teksten 60% synlighed*/
     }
-    100% {
-      transform: translateZ(0) translateY(0); /*Efter de 0.8 sek er teksen lige langt fremme som anden tekst op på sin rette plads ift højde*/
-      opacity: 1; /*Teksten er helt synlig*/
+    100% { /*Når animationen er færdig, har teksten dens css egenskaber den har allerede har.
+        Derfor er dette felt tomt*/
     }
   }
 
@@ -221,11 +234,8 @@ header {
     .forside-bg h2{
         font-size: 20px;
     }
-}
 
-
-@media only screen and (max-width: 1023px) {
-    nav ul{
+    header nav ul{
         display: none;
     }
 
@@ -235,7 +245,17 @@ header {
         z-index: 5;
     }
 
+    .burger-menu:hover{
+        cursor: pointer;
+    }
 }
+
+
+
+
+
+  
+  
 
 /*stregens egenskaber*/
 .hover-underline {
@@ -914,6 +934,52 @@ input[type=text], input[type=password] {
     padding-top: 150px;
   }
 
+
+/* ---------- Menu Modal pop up - Daniel ---------- */
+.modal-øl {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+  }
+  
+  .modal-øl-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: -120px;
+    left: 10%;
+    right: 10%;
+
+  }
+
+#open-modal:hover{
+    cursor: pointer;
+}
+  
+  .close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
  /* OM MIKKELLER------------------------------*/ 
 /* Knapperne */

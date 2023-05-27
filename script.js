@@ -1,4 +1,5 @@
 
+// ----------- Filter funktion på menu siden - Jacob ---------- //
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -130,7 +131,7 @@ window.onclick = function(event) {
 
 
 
-//---------MODAL-------------------------------------------------
+//---------MODAL------Tilmeld Nyhedsbrev-------------------------------------------
 
 
 // Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
@@ -160,7 +161,13 @@ window.onclick = function(event) {
 }
 
 
-// ----------- Filter funktion på menu siden - Jacob ---------- //
+
+
+
+
+
+
+
 
 
 
@@ -202,3 +209,13 @@ const button = document.getElementById('tilmeld');
 button.addEventListener('click', function() {
   alert('Du er nu tilmeldt vores nyhedsbrev :))');
 });
+
+
+
+
+//---------MODAL------Øl information-------------------------------------------
+
+
+
+
+
