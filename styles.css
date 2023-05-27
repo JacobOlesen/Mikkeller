@@ -1077,8 +1077,71 @@ input[type=text], input[type=password] {
 
 
 /* ---------- Menu modal pop-up - Daniel ---------- */
+.modalInfo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-indhold {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 500px;
+  }
+  
+  .luk {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .luk:hover,
+  .luk:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
+  #openModal:hover{
+    cursor: pointer;
+  }
 
+  .modal-indhold h2{
+    text-align: center;
+  }
+
+  .beer-info{
+    display: flex;
+  }
+
+  .beer-pic{
+    background-color: red;
+
+    width: 25%;
+    height: 400px;
+  }
+
+  .beer-text{
+    background-color: blue;
+
+    width: 75%;
+    height: 400px;
+  }
+
+  .beer-text h2{
+    font-size: 17pt;
+    text-align: left;
+  }
 
 
 
