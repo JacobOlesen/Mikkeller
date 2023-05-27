@@ -284,7 +284,7 @@ header {
 
 
 
-/* ---------- Event sektion på forsiden ---------- */
+
 /* ---------- Event sektion på forsiden - Jacob ---------- */
 
 
@@ -321,78 +321,78 @@ header {
 }
 
 /* De forskellige bokses individuelle styles */
-#jazz, #tasting, #sommerferie, #quiz, #marked{
+.jazz, .tasting, .sommerferie, .quiz, .marked{
     display: flex;
 }
-#jazz, #tasting, #quiz{
+.jazz, .tasting, .quiz{
     justify-content: center;
 }
-#jazz, #tasting, #sommerferie, #marked{
+.jazz, .tasting, .sommerferie, .marked{
     flex-direction: column;
 }
-#jazz, #tasting, #quiz{
+.jazz, .tasting, .quiz{
     align-items: center;
 }
 
-#jazz{
+.jazz{
     height: 500px;
     background-color: #505127;
     border: solid #A39163 20px;
 }
-#jazz h5{
+.jazz h5{
     color: #A8A9AD;
     font-size: 40pt;
 }
-#tasting{
+.tasting{
     height: 200px;
     background-color: #FAB393;
     margin-top: 15px;
 }
-#tasting h5{
+.tasting h5{
     color: #ED6C1F;
     font-size: 30pt;
 }
-#tasting img{
+.tasting img{
     height: 100px;
 }
-#sommerferie{
+.sommerferie{
     height: 400px;
     background-color: #29304D;
     border: solid #CBCBCB 20px;
 }
-#sommerferie h5{
+.sommerferie h5{
     color: #ED6C1F;
     font-size: 35pt;
     margin: 10px;
 }
-#quiz{
+.quiz{
     height: 200px;
     background-color: #65C5D3;
     border: solid #0067A1 20px;
     margin-top: 15px;
 }
-#quiz h5{
+.quiz h5{
     font-size: 40pt;
     color: #ED6C1F;
 }
-#marked{
+.marked{
     height: 200px;
     background-color: #FFF6B5;
     border: solid #D0DC54 20px;
     text-align: right;
 }
-#marked h5{
+.marked h5{
     font-size: 30pt;
     color: #A29C47;
     margin: 10px;
 }
-#takeover{
+.takeover{
     height: 500px;
     background-color: #E38F08;
     border: solid #505127 20px;
     margin-top: 15px;
 }
-#takeover h5{
+.takeover h5{
     font-size: 35pt;
     color: #505127;
     margin: 20px;
@@ -430,35 +430,35 @@ header {
 
 /* Breakpoint 1 gør skriftstørrelse mindre der hvor det er nødvendigt */
 @media only screen and (max-width: 1250px) {
-    #tasting h5, #takeover h5, #sommerferie h5{
+    .tasting h5, .takeover h5, .sommerferie h5{
         font-size: 30pt;
     }
 }
 
 /* Breakpoint 2 blier der ændret på skriftstørrelse igen, samt højde på nogle af boksene */
 @media only screen and (max-width: 1100px) {
-    #jazz{
+    .jazz{
         height: 400px;
     }
-    #jazz h5{
+    .jazz h5{
         font-size: 30pt;
     }
-    #tasting h5{
+    .tasting h5{
         font-size: 25pt;
     }
-    #sommerferie{
+    .sommerferie{
         height: 300px;
     }
-    #sommerferie h5{
+    .sommerferie h5{
         font-size: 25pt;
     }
-    #quiz h5{
+    .quiz h5{
         font-size: 30pt;
     }
-    #takeover{
+    .takeover{
         height: 400px;
     }
-    #takeover h5{
+    .takeover h5{
         font-size: 25pt;
     }
 }
@@ -480,10 +480,10 @@ header {
         width: 34.2%;
         margin-top: 20px;
     }
-    #marked{
+    .marked{
         margin-top: 15px;
     }
-    #takeover{
+    .takeover{
         height: 300px;
     }
     #mobil-knapsektion{
@@ -497,20 +497,20 @@ header {
 
 /* Breakpoint 4 bliver der primært ændret på skriftstørrelse og en smule margin */
 @media only screen and (max-width: 650px) {
-    #jazz h5{
+    .jazz h5{
         font-size: 25pt;
     }
-    #takeover h5{
+    .takeover h5{
         font-size: 20pt;
         margin: 5px;
     }
-    #tasting h5{
+    .tasting h5{
         font-size: 20pt;
     }
-    #marked h5{
+    .marked h5{
         font-size: 25pt;
     }
-    #sommerferie h5{
+    .sommerferie h5{
         font-size: 23px;
     }
 }
