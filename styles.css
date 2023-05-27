@@ -900,58 +900,56 @@ input[type=text], input[type=password] {
 .static {
     position:absolute;
     background: white;
-  }
-  .static:hover { 
+}
+.static:hover { 
     opacity:0; /**/
-  }
-  .active ,.static {
+}
+.active ,.static {
     width: 70%;
-  }
-  #månedens-øl{ /**/
+}
+#månedens-øl{ /**/
     display: flex;
     justify-content: center;
 
     padding-top: 150px;
-  }
+}
 
-
- /* OM MIKKELLER------------------------------*/ 
-/* Knapperne */
-
+/* margin top så der er mellemrum op til banneret */
 .menu .eventoverskrift{
     margin-top: 50px;
 }
-
+/* Div'er som filterknapperne er samlet i */
 #myBtnContainer{
     text-align: right;
     margin-right: 15%;
     margin-bottom: 50px;
 }
-
+/* Knappernes styles */
 .btn{
-border: none;
-background-color: white;
-font-family: "nitti-typewriter-normal", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 1.5vw;
-margin: 10px;
+    border: none;
+    background-color: white;
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    margin: 10px;
 }
+
+/* hvad der skal ske på hover */
 .btn:hover {
     font-family: "nitti-typewriter-cameo", sans-serif;
     font-weight: 700;
-  }
-
+}
+/* hvordan den aktive knap skal se ud, altså hvad den ændrer sig til når man trykker på den */
   .btn.aktiv {
     font-family: "nitti-typewriter-cameo", sans-serif;
     font-weight: 700;
-  }
-
+}
+/* styles på div'erne med de forskellige øl i (h3, h4 og linjen(hr))*/
 .oel-menu hr{
     margin-left: 0%;
     margin-right: 0%;
 }
-
 .menu h3, .menu h4{
     font-family: "nitti-typewriter-normal", sans-serif;
     font-weight: 400;
@@ -963,6 +961,7 @@ margin: 10px;
 .menu h4{
     font-size: 1,6vw;
 }
+/* placering og margins på div'en */
 .oel-menu{
     display: flex;
     justify-content: center;
@@ -972,22 +971,51 @@ margin: 10px;
     margin-left: 15%;
     margin-right: 15%;
 }
+/* billedets størrelse */
 .oel-menu img{
     width: 90%;
     padding-left: 30px;
 }
+/* filterfunktionen, som med display none/block, gør at de valgte øl kommer frem/forsvinder, når man trykker på knapperne */
 .filterDiv {
     display: none;
-  }
-  .show {
+}
+.show {
     display: block;
-  }
-  .container {
-    margin-top: 20px;
-    overflow: hidden;
-  }
+}
+
+@media only screen and (max-width: 980px) {
+    .oel-menu{
+        flex-direction: column;
+        margin: 1%;
+    }
+    .flexoel{
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .menu h4{
+        font-size: 1.6vw;
+    }
+    .btn{
+        font-size: 2vw;
+    }
+} 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* OM MIKKELLER------------------------------*/
 
 
 
