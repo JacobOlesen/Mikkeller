@@ -219,3 +219,5 @@ button.addEventListener('click', function() {
 
 
 
+/* AOS scrolling library */
+AOS.init();

@@ -304,7 +304,7 @@ header {
 
 
 
-/* ---------- Event sektion på forsiden ---------- */
+
 /* ---------- Event sektion på forsiden - Jacob ---------- */
 
 
@@ -341,78 +341,78 @@ header {
 }
 
 /* De forskellige bokses individuelle styles */
-#jazz, #tasting, #sommerferie, #quiz, #marked{
+.jazz, .tasting, .sommerferie, .quiz, .marked{
     display: flex;
 }
-#jazz, #tasting, #quiz{
+.jazz, .tasting, .quiz{
     justify-content: center;
 }
-#jazz, #tasting, #sommerferie, #marked{
+.jazz, .tasting, .sommerferie, .marked{
     flex-direction: column;
 }
-#jazz, #tasting, #quiz{
+.jazz, .tasting, .quiz{
     align-items: center;
 }
 
-#jazz{
+.jazz{
     height: 500px;
     background-color: #505127;
     border: solid #A39163 20px;
 }
-#jazz h5{
+.jazz h5{
     color: #A8A9AD;
     font-size: 40pt;
 }
-#tasting{
+.tasting{
     height: 200px;
     background-color: #FAB393;
     margin-top: 15px;
 }
-#tasting h5{
+.tasting h5{
     color: #ED6C1F;
     font-size: 30pt;
 }
-#tasting img{
+.tasting img{
     height: 100px;
 }
-#sommerferie{
+.sommerferie{
     height: 400px;
     background-color: #29304D;
     border: solid #CBCBCB 20px;
 }
-#sommerferie h5{
+.sommerferie h5{
     color: #ED6C1F;
     font-size: 35pt;
     margin: 10px;
 }
-#quiz{
+.quiz{
     height: 200px;
     background-color: #65C5D3;
     border: solid #0067A1 20px;
     margin-top: 15px;
 }
-#quiz h5{
+.quiz h5{
     font-size: 40pt;
     color: #ED6C1F;
 }
-#marked{
+.marked{
     height: 200px;
     background-color: #FFF6B5;
     border: solid #D0DC54 20px;
     text-align: right;
 }
-#marked h5{
+.marked h5{
     font-size: 30pt;
     color: #A29C47;
     margin: 10px;
 }
-#takeover{
+.takeover{
     height: 500px;
     background-color: #E38F08;
     border: solid #505127 20px;
     margin-top: 15px;
 }
-#takeover h5{
+.takeover h5{
     font-size: 35pt;
     color: #505127;
     margin: 20px;
@@ -422,8 +422,10 @@ header {
 #knapsektion{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: #ED6C1F;
 }
-.knap{
+.knap {
     /* højde og brede på boksen, samt tykkelse og farve på border */
     height: 50px;
     width: 100px;
@@ -446,39 +448,40 @@ header {
     font-size: 12pt;
 }
 
+
 /*---------- Breakpoint ----------*/
 
 /* Breakpoint 1 gør skriftstørrelse mindre der hvor det er nødvendigt */
 @media only screen and (max-width: 1250px) {
-    #tasting h5, #takeover h5, #sommerferie h5{
+    .tasting h5, .takeover h5, .sommerferie h5{
         font-size: 30pt;
     }
 }
 
 /* Breakpoint 2 blier der ændret på skriftstørrelse igen, samt højde på nogle af boksene */
 @media only screen and (max-width: 1100px) {
-    #jazz{
+    .jazz{
         height: 400px;
     }
-    #jazz h5{
+    .jazz h5{
         font-size: 30pt;
     }
-    #tasting h5{
+    .tasting h5{
         font-size: 25pt;
     }
-    #sommerferie{
+    .sommerferie{
         height: 300px;
     }
-    #sommerferie h5{
+    .sommerferie h5{
         font-size: 25pt;
     }
-    #quiz h5{
+    .quiz h5{
         font-size: 30pt;
     }
-    #takeover{
+    .takeover{
         height: 400px;
     }
-    #takeover h5{
+    .takeover h5{
         font-size: 25pt;
     }
 }
@@ -500,15 +503,17 @@ header {
         width: 34.2%;
         margin-top: 20px;
     }
-    #marked{
+    .marked{
         margin-top: 15px;
     }
-    #takeover{
+    .takeover{
         height: 300px;
     }
     #mobil-knapsektion{
         display: flex;
         justify-content: center;
+        text-decoration: none;
+        color: #ED6C1F;
     }
     .knap{
         margin-top: 10px;
@@ -517,20 +522,20 @@ header {
 
 /* Breakpoint 4 bliver der primært ændret på skriftstørrelse og en smule margin */
 @media only screen and (max-width: 650px) {
-    #jazz h5{
+    .jazz h5{
         font-size: 25pt;
     }
-    #takeover h5{
+    .takeover h5{
         font-size: 20pt;
         margin: 5px;
     }
-    #tasting h5{
+    .tasting h5{
         font-size: 20pt;
     }
-    #marked h5{
+    .marked h5{
         font-size: 25pt;
     }
-    #sommerferie h5{
+    .sommerferie h5{
         font-size: 23px;
     }
 }
@@ -920,104 +925,56 @@ input[type=text], input[type=password] {
 .static {
     position:absolute;
     background: white;
-  }
-  .static:hover { 
+}
+.static:hover { 
     opacity:0; /**/
-  }
-  .active ,.static {
+}
+.active ,.static {
     width: 70%;
-  }
-  #månedens-øl{ /**/
+}
+#månedens-øl{ /**/
     display: flex;
     justify-content: center;
 
     padding-top: 150px;
-  }
-
-
-/* ---------- Menu Modal pop up - Daniel ---------- */
-.modal-øl {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
-  }
-  
-  .modal-øl-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    top: -120px;
-    left: 10%;
-    right: 10%;
-
-  }
-
-#open-modal:hover{
-    cursor: pointer;
 }
-  
-  .close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close-modal:hover,
-  .close-modal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
- /* OM MIKKELLER------------------------------*/ 
-/* Knapperne */
-
+/* margin top så der er mellemrum op til banneret */
 .menu .eventoverskrift{
     margin-top: 50px;
 }
-
+/* Div'er som filterknapperne er samlet i */
 #myBtnContainer{
     text-align: right;
     margin-right: 15%;
     margin-bottom: 50px;
 }
-
+/* Knappernes styles */
 .btn{
-border: none;
-background-color: white;
-font-family: "nitti-typewriter-normal", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 1.5vw;
-margin: 10px;
+    border: none;
+    background-color: white;
+    font-family: "nitti-typewriter-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    margin: 10px;
 }
+
+/* hvad der skal ske på hover */
 .btn:hover {
     font-family: "nitti-typewriter-cameo", sans-serif;
     font-weight: 700;
-  }
-
+}
+/* hvordan den aktive knap skal se ud, altså hvad den ændrer sig til når man trykker på den */
   .btn.aktiv {
     font-family: "nitti-typewriter-cameo", sans-serif;
     font-weight: 700;
-  }
-
+}
+/* styles på div'erne med de forskellige øl i (h3, h4 og linjen(hr))*/
 .oel-menu hr{
     margin-left: 0%;
     margin-right: 0%;
 }
-
 .menu h3, .menu h4{
     font-family: "nitti-typewriter-normal", sans-serif;
     font-weight: 400;
@@ -1029,6 +986,7 @@ margin: 10px;
 .menu h4{
     font-size: 1,6vw;
 }
+/* placering og margins på div'en */
 .oel-menu{
     display: flex;
     justify-content: center;
@@ -1038,22 +996,51 @@ margin: 10px;
     margin-left: 15%;
     margin-right: 15%;
 }
+/* billedets størrelse */
 .oel-menu img{
     width: 90%;
     padding-left: 30px;
 }
+/* filterfunktionen, som med display none/block, gør at de valgte øl kommer frem/forsvinder, når man trykker på knapperne */
 .filterDiv {
     display: none;
-  }
-  .show {
+}
+.show {
     display: block;
-  }
-  .container {
-    margin-top: 20px;
-    overflow: hidden;
-  }
+}
+
+@media only screen and (max-width: 980px) {
+    .oel-menu{
+        flex-direction: column;
+        margin: 1%;
+    }
+    .flexoel{
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .menu h4{
+        font-size: 1.6vw;
+    }
+    .btn{
+        font-size: 2vw;
+    }
+} 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* OM MIKKELLER------------------------------*/
 
 
 
@@ -1076,6 +1063,41 @@ margin: 10px;
 .ommikkeller img {
     max-width: 100%;
 }
+
+
+
+
+
+
+
+
+/* ---------- Klubber sektion - Jacob ---------- */
+
+#klubber{
+    padding-top: 100px;
+}
+#klubber h3, #klubber .oel-menu, #klubber .oel-menu div{
+    margin-top: 10px;
+}
+#klubber h3{
+    font-size: 1.3vw;
+}
+
+@media only screen and (max-width: 980px) {
+    #klubber .oel-menu{
+        flex-direction: row;
+    }
+    #klubber .oel-menu{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #klubber h2{
+        font-size: 3vw;
+    }
+    #klubber h3{
+        font-size: 1.7vw;
+    }
+} 
 
 
 
@@ -1138,3 +1160,4 @@ footer .dag-tid div{
         margin-bottom: 50px;
     }
 }
+
