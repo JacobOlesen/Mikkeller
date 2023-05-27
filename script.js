@@ -1,30 +1,3 @@
-
-
-
-var questions = document.getElementsByClassName('eventOverskrift');
-
-// Add click event listeners to each eventOverskrift
-for (var i = 0; i < questions.length; i++) {
-  questions[i].addEventListener('click', function() {
-    var dropDown = this.nextElementSibling;
-    var arrow = this.querySelector('.arrow');
-
-    if (dropDown.style.display === 'block') {
-      dropDown.style.display = 'none';
-      arrow.classList.remove('rotate');
-    } else {
-      dropDown.style.display = 'block';
-      arrow.classList.add('rotate');
-    }
-  });
-}
-
-
-/* AOS scrolling library */
-AOS.init();
-
-
-
 // ----------- Filter funktion på menu siden - Jacob ---------- //
 filterSelection("all")
 function filterSelection(c) {
@@ -68,6 +41,33 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " aktiv";
   });
 }
+
+
+var questions = document.getElementsByClassName('eventOverskrift');
+
+// Add click event listeners to each eventOverskrift
+for (var i = 0; i < questions.length; i++) {
+  questions[i].addEventListener('click', function() {
+    var dropDown = this.nextElementSibling;
+    var arrow = this.querySelector('.arrow');
+
+    if (dropDown.style.display === 'block') {
+      dropDown.style.display = 'none';
+      arrow.classList.remove('rotate');
+    } else {
+      dropDown.style.display = 'block';
+      arrow.classList.add('rotate');
+    }
+  });
+}
+
+
+
+/* AOS scrolling library */
+AOS.init();
+
+
+
 
 
 
@@ -199,17 +199,6 @@ button.addEventListener('click', function() {
 
 
 
-
-//---------Burgermenu-------------------------------------------------
-// Open and close the menu when burger menu icon is clicked
-document.getElementById('burger-menuu').addEventListener('click', function() {
-  var BurgerMenuContent = document.getElementById('BurgerMenuContent');
-  if (BurgerMenuContent.style.right === '-250px') {
-    BurgerMenuContent.style.right = '0';
-  } else {
-    BurgerMenuContent.style.right = '-250px';
-  }
-});
 
 
 

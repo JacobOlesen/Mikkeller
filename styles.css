@@ -121,8 +121,35 @@ header {
 }
 
 /*Burger-menuen vises ikke - får display block i media query*/
-#burger-menuu{
+#burger-menu{
     display: none;
+}
+
+/* Style for menu that slides out from the right */
+#menu {
+  background-color: #666;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100vh;
+  width: 250px;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin-bottom: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
 }
 
 
@@ -250,13 +277,13 @@ header {
         display: none;
     }
 
-    #burger-menuu {
+    #burger-menu {
         display: block;
         width: 30px;
         z-index: 5;
     }
 
-    #burger-menuu:hover ,#burger-menu-menu{
+    #burger-menu:hover{
         cursor: pointer;
     }
 
@@ -868,11 +895,6 @@ input[type=text], input[type=password] {
 
 
 
-#dayOutput{
-    display: none;
-  }
-
-
 
 #aarhus-kort img{
     width: 100%;
@@ -1053,6 +1075,8 @@ input[type=text], input[type=password] {
 
 
 
+
+/* ---------- Menu modal pop-up - Daniel ---------- */
 
 
 
