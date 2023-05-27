@@ -1042,6 +1042,41 @@ input[type=text], input[type=password] {
 
 
 
+
+
+
+
+/* ---------- Klubber sektion - Jacob ---------- */
+
+#klubber{
+    padding-top: 100px;
+}
+#klubber h3, #klubber .oel-menu, #klubber .oel-menu div{
+    margin-top: 10px;
+}
+#klubber h3{
+    font-size: 1.3vw;
+}
+
+@media only screen and (max-width: 980px) {
+    #klubber .oel-menu{
+        flex-direction: row;
+    }
+    #klubber .oel-menu{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #klubber h2{
+        font-size: 3vw;
+    }
+    #klubber h3{
+        font-size: 1.7vw;
+    }
+} 
+
+
+
+
 /*-----Footer-----------------------------------------------*/
   
 footer{
@@ -1100,3 +1135,4 @@ footer .dag-tid div{
         margin-bottom: 50px;
     }
 }
+
