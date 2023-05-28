@@ -72,6 +72,10 @@ AOS.init();
 
 
 
+// ----------- Sektion Find os - pågældende dato bliver bremhævet  - Daniel ---------- //
+
+//Kilde: https://stackoverflow.com/questions/4701940/change-background-with-css-on-particular-date
+
 //bruger koden new Date() til at hente data, som repræsenterer den aktuelle dato og tid.
 let d = new Date();
 
@@ -160,7 +164,6 @@ window.onclick = function(event) {
 
 //---------MODAL------Tilmeld Nyhedsbrev-------------------------------------------
 
-
 // Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
 var modal = document.getElementById("myModal");
 
@@ -189,12 +192,11 @@ window.onclick = function(event) {
 
 
 
+// ----------- Footer - Allert når man har trykket på knap - Daniel ---------- //
 
+const button = document.getElementById('tilmeld'); //Henter Id fra HTML
 
-
-const button = document.getElementById('tilmeld');
-
-button.addEventListener('click', function() {
+button.addEventListener('click', function() { //Når knappen bliver klikket popper en allert op, til info
   alert('Du er nu tilmeldt vores nyhedsbrev :))');
 });
 
