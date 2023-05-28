@@ -86,7 +86,7 @@ header {
     z-index: 2;
   }
 
-  
+/*Egenskaber for navigation linjen - højrestillet*/
  header nav ul {
     list-style-type: none;
     margin: 0;
@@ -102,7 +102,7 @@ header {
     
   }
   
-  /*Genrelle regler for menupunkterne*/
+  /*Genrelle regler for teksten i menupunkterne*/
   header nav ul li a {
     text-decoration: none;
     color: #ED6C1F;
@@ -131,6 +131,7 @@ header {
     cursor: pointer;
 }
 
+/*Skriften på forsiden bliver mindre, nav fjernes og brugermenu vises */
 @media only screen and (max-width: 980px) {
     .forside-bg h1{
         font-size: 30px;
@@ -155,7 +156,6 @@ header {
 
 
 /*Bueger menu-------------------------------------*/
-
 .forside-bg{
     width: 100vw;
     height: 100vh;
