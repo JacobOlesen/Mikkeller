@@ -323,7 +323,7 @@ margin-right: 15%;
 
 
 
-/*Bueger menu-------------------------------------*/
+/*Burger menu-------------------------------------*/
 .forside-bg{
     width: 100%;
     height: 100vh;
@@ -556,7 +556,7 @@ margin-right: 15%;
     margin: 20px;
 }
 
-/* Flex på kanppen, så teksten står i midten af boksen */
+/* Flex på knappen, så teksten står i midten af boksen */
 #knapsektion{
     display: flex;
     justify-content: center;
@@ -690,7 +690,7 @@ margin-right: 15%;
     
 
 
-/*SEKTION - KAMPAGNE - START ----------------------------------------------------------------*/
+/*SEKTION - KAMPAGNE - START ANNE  ----------------------------------------------------------------*/
 
 
 .kampagne{
@@ -1350,7 +1350,7 @@ input[type=text], input[type=password] {
 
 
 
-/* OM MIKKELLER------------------------------*/
+/* OM MIKKELLER---------- ANNE --------------------*/
 
 
 
@@ -1464,6 +1464,7 @@ input[type=text], input[type=password] {
 
 
 /* ---------- Klubber sektion - Jacob ---------- */
+/* Genbrug fra div'erne med øl på menu siden */
 
 #klubber{
     padding-top: 50px;
@@ -1495,7 +1496,7 @@ input[type=text], input[type=password] {
 
 
 
-/*-----Footer-----------------------------------------------*/
+/*-----Footer--------------------- DANIEL --------------------------*/
   
 footer{
     width: 100%;
