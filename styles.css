@@ -981,6 +981,9 @@ input[type=text], input[type=password] {
 
     padding-top: 150px;
 }
+#månedens-øl-mobil{
+    display: none;
+}
 
 /* margin top så der er mellemrum op til banneret */
 .menu .eventoverskrift{
@@ -1067,6 +1070,20 @@ input[type=text], input[type=password] {
     }
     .btn{
         font-size: 2vw;
+    }
+    #månedens-øl{
+        display: none;
+    }
+    #månedens-øl-mobil{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #månedens-øl-mobil img{
+        width: 100%;
     }
 } 
 
