@@ -151,7 +151,8 @@ margin-right: 15%;
     }
 }
 
-/*Burger-menu-------------*/
+/*Burger-menu-----Jacob og Daniel--------*/
+/*https://codepen.io/erikterwan/pen/EVzeRP?editors=0100*/
 .header-mobil{
     display: none;
 }
@@ -928,7 +929,7 @@ input[type=text], input[type=password] {
 
 /*SEKTION - KOM FORBI - Daniel ---------------------------------------------------------------*/
 #find-os-sektion{
-    margin-top: 50px;
+    padding-top: 100px;
 }
 
 .find-os-content{
