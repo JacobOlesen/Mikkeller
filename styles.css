@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
   }
 
-  
+
 /* Baggrundfarve på alt */
 body{
     background-color: #f2f2f2;
@@ -84,46 +84,28 @@ header {
     position: fixed;
     z-index: 2;
   }
+
   
-/*På forsiden er der ikke nogle baggrund*/
-  #header-forside {
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out; /*Giver en smoot overgang */
-  }
-
-/*Først når der er scrolled mere end 100px (JavaScript, træder denne regel i kraft og giver baggrundsfarve*/
-  #header-forside.scrolled {
-    background-color: #29304D;
-  }
-
-/*Det samme sker her - Tekstfarven på nav'en er i staten hvide*/
-  #header-forside nav ul li a{
-    color: #f3f3f3;
-    transition: color 0.3s ease-in-out; /*Giver en smoot overgang */
-  }
-
-/*Når der er scrolled mere end 100px (JavaScript, træder denne regel i kraft og ændrer farven*/
-#header-forside nav ul li a.scrolled {
-    color: #ED6C1F;  
-  }
 
 
-  nav ul {
+
+ header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: right;
+    
   }
   
   /*Giver menupunkterne plads imellem sig*/
-  nav ul li {
+  header nav ul li {
     margin-left: 30px;
     
   }
   
   /*Genrelle regler for menupunkterne*/
-  nav ul li a {
+  header nav ul li a {
     text-decoration: none;
     color: #ED6C1F;
     
@@ -139,9 +121,77 @@ header {
 }
 
 /*Burger-menuen vises ikke - får display block i media query*/
-.burger-menu{
+#burger-menu{
     display: none;
 }
+
+/* Style for menu that slides out from the right */
+#menu {
+  background-color: #666;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100vh;
+  width: 250px;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin-bottom: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+
+#BurgerMenuContent {
+    background-color: #29304D;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  #BurgerMenuContent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 70px
+  }
+  
+  #BurgerMenuContent li {
+    margin-bottom: 20px;
+
+    
+  }
+  
+  #BurgerMenuContent a {
+    text-decoration: none;
+    color: #ED6C1F;
+    font-size: 22px;
+  }
+
+
+
+
+
+
 
 .forside-bg{
     width: 100vw;
@@ -173,42 +223,43 @@ header {
 }
 
 
-
-.tracking-in-expand-fwd {
-	animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+/*Tekst forside animation - "FIRST AND FOREMOST BEER"*/
+/*Kilde: https://animista.net*/
+.aniamtion-ud {  /*animationens class navn som sættes på HTML elementet*/
+	animation: aniamtion-ud 1s; /*Animationen varer 1 sekund */
 }
 
-@keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -1em;
-      transform: translateZ(-700px);
-      opacity: 0;
+@keyframes aniamtion-ud { /*keyframes linkes til class name*/
+    0% { /*Når animationen starter*/
+      letter-spacing: -1em; /*Bogstaverne står oven i hinanden*/
+      opacity: 0; /*Teksten er helt genemsigtig*/
     }
-    40% {
+    40% { /*Når 40% af aniamtionen er loadet får teksten 60% synlighed*/
       opacity: 0.6;
     }
-    100% {
-      transform: translateZ(0);
-      opacity: 1;
+    100% { /*Når animationen er loadet færdig*/
+      opacity: 1; /*Teksten er nu fyld synlig*/
     }
   }
 
 
-  .tracking-in-expand-fwd-bottom {
-	animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+
+/*Tekst forside animation - "MIKKELLER BAR AARHUS"*/
+/*Kilde: https://animista.net*/
+  .aniamtion-op-ud {
+	animation: aniamtion-op-ud 0.8s 0.7s both; /*0.8 sekunders delay og varer 0.7 sekunder */
 }
-@keyframes tracking-in-expand-fwd-bottom {
+@keyframes aniamtion-op-ud {
     0% { /*Når animationen starter*/
-      letter-spacing: -0.5em; /*Bogstaverne er oven i hinanden*/
-      transform: translateZ(-10px) translateY(50px); /*Bag ved anden tekst og 50px nede*/
-      opacity: 0; 
+      letter-spacing: -10px; /*Bogstaverne er mast sammen oven i hinanden*/
+      transform: translateY(50px); /*Treksten starter med atvære placeret 50px nede på Y-aksen*/
+      opacity: 0; /*Teksten er helt genemsigtig og kan ikke ses*/
     }
     40% {
-      opacity: 0.6; 
+      opacity: 0.6; /*Når 40% af aniamtionen er loadet får teksten 60% synlighed*/
     }
-    100% {
-      transform: translateZ(0) translateY(0); /*Efter de 0.8 sek er teksen lige langt fremme som anden tekst op på sin rette plads ift højde*/
-      opacity: 1; /*Teksten er helt synlig*/
+    100% { /*Når animationen er færdig, har teksten dens css egenskaber den har allerede har.
+        Derfor er dette felt tomt*/
     }
   }
 
@@ -221,21 +272,38 @@ header {
     .forside-bg h2{
         font-size: 20px;
     }
-}
 
-
-@media only screen and (max-width: 1023px) {
-    nav ul{
+    header nav ul{
         display: none;
     }
 
-    .burger-menu{
+    #burger-menu {
         display: block;
         width: 30px;
         z-index: 5;
     }
 
+    #burger-menu:hover{
+        cursor: pointer;
+    }
+
+    #BurgerMenuContent ul{
+        display: block;
+    }
 }
+
+
+@media only screen and (min-width: 980px) {
+    #BurgerMenuContent{
+        display: none;
+    }
+}
+
+
+
+
+  
+  
 
 /*stregens egenskaber*/
 .hover-underline {
@@ -827,11 +895,6 @@ input[type=text], input[type=password] {
 
 
 
-#dayOutput{
-    display: none;
-  }
-
-
 
 #aarhus-kort img{
     width: 100%;
@@ -1013,7 +1076,72 @@ input[type=text], input[type=password] {
 
 
 
+/* ---------- Menu modal pop-up - Daniel ---------- */
+.modalInfo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-indhold {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 500px;
+  }
+  
+  .luk {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .luk:hover,
+  .luk:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
+  #openModal:hover{
+    cursor: pointer;
+  }
+
+  .modal-indhold h2{
+    text-align: center;
+  }
+
+  .beer-info{
+    display: flex;
+  }
+
+  .beer-pic{
+    background-color: red;
+
+    width: 25%;
+    height: 400px;
+  }
+
+  .beer-text{
+    background-color: blue;
+
+    width: 75%;
+    height: 400px;
+  }
+
+  .beer-text h2{
+    font-size: 17pt;
+    text-align: left;
+  }
 
 
 
@@ -1045,6 +1173,80 @@ input[type=text], input[type=password] {
 }
 
 
+
+/* ---------- Kommende events sektion - Daniel ---------- */
+#kommende-events{
+    padding-top: 150px;
+}
+
+#kommende-events-banner{
+    display: flex;
+    justify-content: center;
+   
+    height: 200px;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+
+    background-image: url(images/holding-beer.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.events-dropdown h2{
+    font-size: 15pt;
+}
+
+
+  
+  .events-dropdown {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 30px;
+    
+
+  }
+  
+  .event-fold-ud {
+    margin-bottom: 30px;
+  }
+  
+  .eventOverskrift {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(135deg);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 10px;
+  }
+  
+  .rotate {
+    transform: rotate(225deg);
+  }
+  
+  .dropDown {
+    display: none;
+  }
+  
+  .drop-down-tekst {
+    width: 80%;
+  }
+
+  .drop-down-tekst p {
+    margin-top: 30px;
+  }
 
 
 
@@ -1078,6 +1280,7 @@ input[type=text], input[type=password] {
         font-size: 1.7vw;
     }
 } 
+
 
 
 
