@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- eksternt js --> <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <!-- eksternt css --> <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <!-- Font --> <link rel="stylesheet" href="https://use.typekit.net/fwi5coi.css">
     <title>Mikkeller Bar Aarhus</title>
+
+    <!-- Meta text (SEO) --><meta name="description" content="Mikkeller Bar Aarhus er en lille hyggelig bar beliggende på Jægergårdsgade. Med et bredt udvalg af specialøl fra eget brand, er der noget for enhver smag">
+    <!-- Meta keywords (SEO) --><meta name="keywords" content="Jægergårdsgade, Bar, Øl, Mikkeller, Hygge, ">
 </head>
 <body>
 
-    <header id="header-forside">
-        <div class="logo-hvid-orange">
-          <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+    <header>
+        <div class="header-pc">
+            <div class="logo-hvid-orange">
+                <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="hover-underline" href="menu.html">Menu</a></li>
+                    <li><a class="hover-underline" href="events.html">Events</a></li>
+                    <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
+                    <li><a class="hover-underline" href="#find-os-sektion">Find Os</a></li>
+                    <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
+                </ul>
+            </nav>
+
         </div>
         
-        <nav>
-          <ul>
-            <li><a class="hover-underline" href="menu.html">Menu</a></li>
-            <li><a class="hover-underline" href="events.html">Events</a></li>
-            <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
-            <li><a class="hover-underline" href="#find-os-sektion">Find Os</a></li>
-            <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
-          </ul>
-        </nav>
 
-        <div class="burger-menu">
-            <a href="">
-                <img src="images/burger-menu.svg" alt="">
-            </a>
-        </div>
+        <div class="header-mobil">
+            <div class="logo-hvid-orange">
+                <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+            </div>
+          
+
+          <nav role="navigation">
+            <div id="menuToggle">
     
-      </header>
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              
+    
+              <ul id="menu">
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="events.html"><li>Events</li></a>
+                <a target=”blank” href="https://shop.mikkeller.dk"></a><li>Shop</li></a>
+                <a href="#find-os-sektion"><li>Find os</li></a>
+                <a href="om-mikkeller.html"><li>Om Mikkeller</li></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+
+
+    
 
     
 
@@ -40,30 +71,28 @@
         <div class="forside-bg">
             <div class="forside-text">
                 <div>
-                    <div class="tracking-in-expand-fwd-bottom">
+                    <div class="aniamtion-op-ud">
                         <h2>MIKKELLER BAR AARHUS</h2>
                     </div>
-                    <div class="tracking-in-expand-fwd">
+                    <div class="aniamtion-ud">
                         <h1>FIRST AND FOREMOST BEER</h1>
                     </div>
                 </div>
             </div>
             <div class="arrow-box">
-                <div class="scroll-arrow">
-                    <a href="#event-scroll"><img src="images/arrow-down.svg" alt=""></a>
-                </div>
+                    <a href="#event-scroll"><img src="images/arrow-down.svg" alt="Pil peger ned til næste sektion"></a>
             </div>
         </div>
         
     </section>
     <div id="event-scroll"></div> <!--Bruges kun så pilen på forsiden scroller til næste sektion-->
     
-    <section class="eventsektion">
+    <section class="eventsektion"> <!-- JACOB -->
         
         <div>
             <div class="eventoverskrift">
                 <h2 class="orange">KOMMENDE EVENTS</h2>
-                <img id="eventhenry" src="images/lille henry 1.png" alt="lille henry 1">
+                <img id="eventhenry" src="images/lillehenry1.png" alt="lille henry 1">
             </div>
                 <hr>
         </div>
@@ -72,13 +101,13 @@
 
             <div class="responsive">
 
-                <div id="jazz">
+                <div class="jazz" data-aos="fade-up-right">
                     <h5>JAZZ</h5>
                     <h5>N'</h5>
                     <h5>POETRY</h5>
                 </div>
 
-                <div id="tasting">
+                <div class="tasting" data-aos="fade-up-right">
                     <h5>BEER TASTING</h5>
                     <img src="images/beertasting.png" alt="Mikkeller grafik">
                 </div>
@@ -87,14 +116,14 @@
 
             <div class="responsive">
 
-                <div id="sommerferie">
+                <div class="sommerferie" data-aos="fade-up">
                     <h5>DEN STORE</h5>
                     <h5>SOMMER-</h5>
                     <h5>FERIE</h5>
                     <h5>QUIZ</h5>
                 </div>
 
-                <div id="quiz">
+                <div class="quiz" data-aos="fade-up">
                     <h5>QUIZZZ</h5>
                 </div>
 
@@ -102,12 +131,12 @@
 
             <div class="responsive">
 
-                <div id="marked">
+                <div class="marked" data-aos="fade-up-left">
                     <h5>MAJ</h5>
                     <h5>MARKED</h5>
                 </div>
 
-                <div id="takeover">
+                <div class="takeover" data-aos="fade-up-left">
                     <h5>TAP</h5>
                     <h5>TAKEOVER</h5>
                     <h5>2023</h5>
@@ -117,30 +146,28 @@
 
         </div>
 
-        <div id="knapsektion">
-
+        <a href="events.html" id="knapsektion" data-aos="fade-up">
             <div class="knap">
-                SE ALLE
+               Alle Events
             </div>
-
-        </div>
+          </a>
 
 
         <div class="mobil-forsideevent">
 
             <div class="responsive">
 
-                <div id="jazz">
+                <div class="jazz" data-aos="fade-up-right">
                     <h5>JAZZ</h5>
                     <h5>N'</h5>
                     <h5>POETRY</h5>
                 </div>
 
-                <div id="quiz">
+                <div class="quiz" data-aos="fade-up-right">
                     <h5>QUIZZZ</h5>
                 </div>
 
-                <div id="tasting">
+                <div class="tasting" data-aos="fade-up-right">
                     <h5>BEER TASTING</h5>
                     <img src="images/beertasting.png" alt="Mikkeller grafik">
                 </div>
@@ -149,20 +176,20 @@
 
             <div class="responsive">
 
-                <div id="sommerferie">
+                <div class="sommerferie" data-aos="fade-up-left">
                     <h5>DEN STORE</h5>
                     <h5>SOMMER-</h5>
                     <h5>FERIE</h5>
                     <h5>QUIZ</h5>
                 </div>
 
-                <div id="takeover">
+                <div class="takeover" data-aos="fade-up-left">
                     <h5>TAP</h5>
                     <h5>TAKEOVER</h5>
                     <h5>2023</h5>
                 </div>
 
-                <div id="marked">
+                <div class="marked" data-aos="fade-up-left">
                     <h5>MAJ</h5>
                     <h5>MARKED</h5>
                 </div>
@@ -171,13 +198,13 @@
 
         </div>
 
-        <div id="mobil-knapsektion">
-
+        <a href="events.html" id="mobil-knapsektion" data-aos="fade-up">
             <div class="knap">
-                SE ALLE
+               Alle Events
             </div>
+          </a>
 
-        </div>
+    </section>
 
 
 <!--KAMPAGNE SEKTION-->
@@ -200,6 +227,7 @@
           
             <h3 class="orange">SLUTTER OM</h3>
            
+            <!--TOM "H"? Hvis den skal være der skal der stå noget i den - Jacob-->
             <h3 class="orange" id="demo"></h3>
 
         </div>
@@ -241,26 +269,26 @@
 
             <div class="vl"></div>
 
-            <div>
+            <div id="mobilbredde">
 
-                <div class="kampagneflex">
+                    <div class="kampagneflex">
         
-                     <div>
-                         <img src="images/flasker.jpg" alt="billed af flasker">
-                     </div>
+                        <div>
+                            <img src="images/flasker.jpg" alt="billed af flasker">
+                        </div>
         
-                </div>
+                    </div>
+
         
-                <div class="kampagneflex">
+                    <div class="kampagneflex">
         
-                      <div>
-                        <button id="myBtn" >TILMELD NYHEDSBREV</button>
-                      </div>
+                        <div>
+                            <button id="myBtn" >TILMELD NYHEDSBREV</button>
+                        </div>
         
-                </div>
-        
+                    </div>
                  
-             </div>
+            </div>
                 
                 <div id="myModal" class="modal">
 
@@ -270,10 +298,10 @@
                         <h1>TILMELD DIG HER</h1>
                         <p>Udfyld formularen nedenfor for at tilmelde dig vores nyhedsbrev</p>
                         
-                        <label for="Navn"><b>Navn</b></label>
+                        <label><b>Navn</b></label>
                         <input type="text" placeholder="Navn..." name="email" required>
                   
-                        <label for="E-mail"><b>E-mail</b></label>
+                        <label><b>E-mail</b></label>
                         <input type="text" placeholder="E-mail..." name="psw" required>
 
 
@@ -285,16 +313,12 @@
 
                     </div>
 
-
                 <div id="id01" class="modal"></div>
-
-                  
-                </div>
-
 
             </div>
 
         </div>
+
 
 
 
@@ -303,7 +327,7 @@
 
 
 
-    <section id="find-os-sektion">
+    <section id="find-os-sektion"> <!--Daniel-->
         <div>
             <div class="eventoverskrift">
                 <h2 class="orange">FIND OS</h2>
@@ -342,12 +366,12 @@
             </div>
 
             <div id="aarhus-kort">
-                <img src="images/Aarhus-kort.png" alt="">
+                <img src="images/Aarhus-kort.png" alt="Kort over Aarhus">
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer> <!--Daniel-->
         <div class="footer-content">
             <div class="footer-sektion">
                 <h3>KONTAKT</h3>
@@ -381,9 +405,9 @@
             <div class="footer-sektion">
                 <h3>Tilmeld dig vores</h3>
                 <h3>nyhedsbrev</h3>
-                <form>
+                <form class="footer-email">
                     <input type="email" id="email" name="email" placeholder="Din email" required>
-                    <button type="submit">Tilmeld</button>
+                    <button id="tilmeld" type="submit">Tilmeld</button>
                   </form>
             </div>
         </div>

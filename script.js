@@ -1,4 +1,5 @@
 
+// ----------- Filter funktion på menu siden - Jacob ---------- //
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -43,6 +44,33 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
+var questions = document.getElementsByClassName('eventOverskrift');
+
+// Add click event listeners to each eventOverskrift
+for (var i = 0; i < questions.length; i++) {
+  questions[i].addEventListener('click', function() {
+    var dropDown = this.nextElementSibling;
+    var arrow = this.querySelector('.arrow');
+
+    if (dropDown.style.display === 'block') {
+      dropDown.style.display = 'none';
+      arrow.classList.remove('rotate');
+    } else {
+      dropDown.style.display = 'block';
+      arrow.classList.add('rotate');
+    }
+  });
+}
+
+
+
+/* AOS scrolling library */
+AOS.init();
+
+
+
+
+
 
 //bruger koden new Date() til at hente data, som repræsenterer den aktuelle dato og tid.
 let d = new Date();
@@ -54,7 +82,7 @@ let day = d.getDay()
 // === kaldes også "strict equality" fordi det ikke kun sammenligner værdierne, men også typerne af de sammenlignede værdier. 
 if (day === 1) {
   document.getElementById("man").style.fontFamily = "nitti-typewriter-cameo"; //Referer til id="man" som er kolonnen med ugedagene
-  document.getElementById("man-tid").style.fontFamily = "nitti-typewriter-cameo";//Referer til id="man1" som er kolonnen med klokkeslettet
+  document.getElementById("man-tid").style.fontFamily = "nitti-typewriter-cameo";//Referer til id="man-tid" som er kolonnen med klokkeslettet
 }
 if (day === 2) {
   document.getElementById("tir").style.fontFamily = "nitti-typewriter-cameo";
@@ -130,7 +158,7 @@ window.onclick = function(event) {
 
 
 
-//---------MODAL-------------------------------------------------
+//---------MODAL------Tilmeld Nyhedsbrev-------------------------------------------
 
 
 // Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
@@ -160,40 +188,31 @@ window.onclick = function(event) {
 }
 
 
-// ----------- Filter funktion på menu siden - Jacob ---------- //
 
 
 
 
-//---------Header scroll forside-------------------------------------------------
-//Laver en const ud fra header i HTML
-const header = document.querySelector('header');
+const button = document.getElementById('tilmeld');
 
-
-//Laver en event listener til selve vinduet ved hjælp af scroll
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY; //Den nye const scrollPosition lytter til hvor vinduet er på y aksen ift. scroll
-  if (scrollPosition > 100) { //Hvis scrollPosition opdager at vinduet er scrollet mere end 100px ned, tilføjer den 'Scrolled' clasen til header
-    header.classList.add('scrolled');
-  } else { //Hvis ikke der er scrollet mere end 100px ned, så er 'Scrolled' clasen fjernet fra headeren
-    header.classList.remove('scrolled');
-  }
+button.addEventListener('click', function() {
+  alert('Du er nu tilmeldt vores nyhedsbrev :))');
 });
 
 
 
-const navLinks = document.querySelectorAll('header nav ul li a');
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
 
-  navLinks.forEach((link) => {
-    if (scrollPosition > 100) {
-      link.classList.add('scrolled');
-    } else {
-      link.classList.remove('scrolled');
-    }
-  });
-});
+
+
+
+
+
+
+
+
+
+
+
+
 
 

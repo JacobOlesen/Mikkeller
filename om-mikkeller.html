@@ -7,29 +7,56 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
         <!-- Font --> <link rel="stylesheet" href="https://use.typekit.net/fwi5coi.css">
-        <title>Menu</title>
+        <title>Om Mikkeller</title>
+
+        <!-- Meta text (SEO) --><meta name="description" content="Mikkeller Bar Aarhus er en lille hyggelig bar beliggende på Jægergårdsgade. Med et bredt udvalg af specialøl fra eget brand, er der noget for enhver smag">
+        <!-- Meta keywords (SEO) --><meta name="keywords" content="Jægergårdsgade, Bar, Øl, Mikkeller, Hygge, ">
     </head>
 <body>
-    <header>
+  <header>
+    <div class="header-pc">
         <div class="logo-hvid-orange">
-          <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+            <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
         </div>
         <nav>
-          <ul>
-            <li><a class="hover-underline" href="menu.html">Menu</a></li>
-            <li><a class="hover-underline" href="events.html">Events</a></li>
-            <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
-            <li><a class="hover-underline" href="opening.html">Find Os</a></li>
-            <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
-          </ul>
+            <ul>
+                <li><a class="hover-underline" href="menu.html">Menu</a></li>
+                <li><a class="hover-underline" href="events.html">Events</a></li>
+                <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
+                <li><a class="hover-underline" href="find-os.html">Find Os</a></li>
+                <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
+            </ul>
         </nav>
 
-        <div class="burger-menu">
-            <a href="">
-                <img src="images/burger-menu.svg" alt="">
-            </a>
+    </div>
+    
+
+    <div class="header-mobil">
+        <div class="logo-hvid-orange">
+            <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
         </div>
-    </header>
+      
+
+      <nav role="navigation">
+        <div id="menuToggle">
+
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          
+
+          <ul id="menu">
+            <a href="menu.html"><li>Menu</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a target=”blank” href="https://shop.mikkeller.dk"></a><li>Shop</li></a>
+            <a href="index.html"><li>Find os</li></a>
+            <a href="om-mikkeller.html"><li>Om Mikkeller</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
 
 
 
@@ -37,7 +64,7 @@
     <div id="omoverskrift">
       <div class="eventoverskrift">
           <h2 class="orange">OM MIKKELLER</h2>
-          <img id="eventhenry" src="images/lille henry 1.png" alt="lille henry 1">
+          <img id="eventhenry" src="images/lillehenry1.png" alt="lille henry 1">
       </div>
           <hr>
   </div>
@@ -145,7 +172,48 @@
 
 
 
+<footer> <!--Daniel-->
+  <div class="footer-content">
+      <div class="footer-sektion">
+          <h3>KONTAKT</h3>
+          <p>+45 31 17 25 62 </p>
+          <p>mikkelleraarhus@mikkeller.dk</p>
+          <p>Jægergårdsgade 61, Aarhus C</p>
+      </div>
+      <div class="footer-sektion">
+          <h3>Åbningstider</h3>
+          <div class="dag-tid">
+              <div>
+                  <p>Mandag</p>
+                  <p>Tirsdag</p>
+                  <p>Onsdag</p>
+                  <p>Torsdag</p>
+                  <p>Fredag</p>
+                  <p>Lørdag</p>
+                  <p>Søndag</p>
+              </div>
+              <div>
+                  <p>15.00 - 23.00</p>
+                  <p>15.00 - 23.00</p>
+                  <p>15.00 - 00.00</p>
+                  <p>14.00 - 01.00</p>
+                  <p>13.00 - 02.00</p>
+                  <p>12.00 - 02.00</p>
+                  <p>15.00 - 23.00</p>
+              </div>
+          </div>
+      </div>
+      <div class="footer-sektion">
+          <h3>Tilmeld dig vores</h3>
+          <h3>nyhedsbrev</h3>
+          <form class="footer-email">
+              <input type="email" id="email" name="email" placeholder="Din email" required>
+              <button id="tilmeld" type="submit">Tilmeld</button>
+            </form>
+      </div>
+  </div>
 
+</footer>
 
 
 

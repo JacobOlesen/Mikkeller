@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +8,67 @@
         <script src="script.js" defer></script>
         <!-- Font --> <link rel="stylesheet" href="https://use.typekit.net/fwi5coi.css">
         <title>Menu</title>
+
+        <!-- Meta text (SEO) --><meta name="description" content="Mikkeller Bar Aarhus er en lille hyggelig bar beliggende på Jægergårdsgade. Med et bredt udvalg af specialøl fra eget brand, er der noget for enhver smag">
+        <!-- Meta keywords (SEO) --><meta name="keywords" content="Jægergårdsgade, Bar, Øl, Mikkeller, Hygge, ">
     </head>
 <body>
 
     <header>
-        <div class="logo-hvid-orange">
-          <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a class="hover-underline" href="menu.html">Menu</a></li>
-            <li><a class="hover-underline" href="events.html">Events</a></li>
-            <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
-            <li><a class="hover-underline" href="opening.html">Find Os</a></li>
-            <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
-          </ul>
-        </nav>
+        <div class="header-pc">
+            <div class="logo-hvid-orange">
+                <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="hover-underline" href="menu.html">Menu</a></li>
+                    <li><a class="hover-underline" href="events.html">Events</a></li>
+                    <li><a class="hover-underline" target=”blank” href="https://shop.mikkeller.dk">Shop</a></li>
+                    <li><a class="hover-underline" href="find-os.html">Find Os</a></li>
+                    <li><a class="hover-underline" href="om-mikkeller.html">Om Mikkeller</a></li>
+                </ul>
+            </nav>
 
-        <div class="burger-menu">
-            <a href="">
-                <img src="images/burger-menu.svg" alt="">
-            </a>
+        </div>
+        
+
+        <div class="header-mobil">
+            <div class="logo-hvid-orange">
+                <a href="index.html"><img src="images/Logo-orange1.2.svg" alt="Mikkeller logo"></a>
+            </div>
+          
+
+          <nav role="navigation">
+            <div id="menuToggle">
+    
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              
+    
+              <ul id="menu">
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="events.html"><li>Events</li></a>
+                <a target=”blank” href="https://shop.mikkeller.dk"></a><li>Shop</li></a>
+                <a href="index.html"><li>Find os</li></a>
+                <a href="om-mikkeller.html"><li>Om Mikkeller</li></a>
+              </ul>
+            </div>
+          </nav>
         </div>
     </header>
 
     <div id="månedens-øl">
-        <img class="static" src="images/månedens øl pic.png" alt="">
-        <img class="active" src="images/Månedens øl_1.gif" alt="">
+        <img class="static" src="images/månedensølpic.png" alt="Månedens Øl">
+        <img class="active" src="images/Månedensøl_1.gif" alt="Månedens Øl">
     </div>
 
-    <section class="menu">
+    <div id="månedens-øl-mobil">
+        <img src="images/månedens-øl-mobil.png" alt="Månedens Øl">
+    </div>
+
+    <section class="menu"> <!-- JACOB -->
 
         <div>
             <div class="eventoverskrift">
@@ -65,23 +96,24 @@
             </button>
           </div>
 
+        <div class="flexoel">
         <div class="oel-menu">
             <div class="filterDiv IPA">
-                <img src="images/Etiket 6.png" alt="Double Blush">
+                <img src="images/Etiket6.png" alt="Double Blush">
                 <h3>Double Blush</h3>
                 <hr class="menu-linje">
                 <h4>IPA</h4>
             </div>
 
             <div class="filterDiv Stout">
-                <img src="images/Etiket 5.png" alt="Devils Triangle">
+                <img src="images/Etiket5.png" alt="Devils Triangle">
                 <h3>Devils Triangle</h3>
                 <hr class="menu-linje">
                 <h4>Stout</h4>
             </div>
 
-            <div class="filterDiv IPA">
-                <img src="images/Etiket 3.png" alt="I Wish">
+            <div class="filterDiv IPA" id="openModal">
+                <img src="images/Etiket3.png" alt="I Wish">
                 <h3>I Wish</h3>
                 <hr class="menu-linje">
                 <h4>IPA</h4>
@@ -90,31 +122,151 @@
         
         <div class="oel-menu">
             <div class="filterDiv Pilsner">
-                <img src="images/Etiket 4.png" alt="Vanilla Shake">
+                <img src="images/Etiket4.png" alt="Vanilla Shake">
                 <h3>Vanilla Shake</h3>
                 <hr class="menu-linje">
                 <h4>Pilsner</h4>
             </div>
 
             <div class="filterDiv Alkoholfri">
-                <img src="images/Etiket 2.png" alt="Murky's Law">
+                <img src="images/Etiket2.png" alt="Murky's Law">
                 <h3>Murky's Law</h3>
                 <hr class="menu-linje">
                 <h4>Alkoholfri</h4>
             </div>
 
             <div class="filterDiv Pilsner">
-                <img src="images/Øl Etiketter.png" alt="Dee's Knots">
+                <img src="images/ØlEtiketter.png" alt="Dee's Knots">
                 <h3>Dee's Knots</h3>
                 <hr class="menu-linje">
                 <h4>Pilsner</h4>
             </div>
         </div>
-
-
+        </div>
 
 
     </section>
+
+
+
+
+    <!-- Daniel -->
+    <div id="myModal" class="modalInfo">
+        <div class="modal-indhold">
+            <span class="luk">&times;</span>
+            <div>
+                <h2>I WISH</h2>
+            </div>
+            
+            <div class="beer-info">
+                <div class="beer-pic">
+                    <img src="images/wish-ipa.png" alt="Wish IPA øldåse">
+                </div>
+                    
+                <div class="beer-text"> 
+                    <h2 class="orange">35 kr</h2>
+                    <h2 class="orange">Vol. 4,9%</h2>
+                    <h2 class="orange">Type: Hazy IPA</h2>
+                    <h2 class="orange">Aromaer: citron, melon og skov</h2>
+                    
+                    <p>Sluk din tørst i en hav af aromaer, der spænder fra citron, melon og skovbund. 
+                        Kombinationen af Citra og Simcoe giver den uklare juice smag af citrus 
+                        og stenfrugt, uden at det er overvældende.
+                    </p>
+                </div>
+            </div>
+
+            <div class="beer-stats">
+                <div class="beer-bitter">
+                    <h2 class="orange">Bitterhed</h2>
+                    <img src="images/Beer-bitter.svg" alt="Øl bitter ">
+                    <h2 class="orange">IBU: 30</h2>
+                </div>
+
+                <div>
+                    <h2 class="orange">Farve</h2>
+                    <img src="images/Beer-color.svg" alt="">
+                    <h2 class="orange">EBC: 20</h2>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer> <!--Daniel-->
+        <div class="footer-content">
+            <div class="footer-sektion">
+                <h3>KONTAKT</h3>
+                <p>+45 31 17 25 62 </p>
+                <p>mikkelleraarhus@mikkeller.dk</p>
+                <p>Jægergårdsgade 61, Aarhus C</p>
+            </div>
+            <div class="footer-sektion">
+                <h3>Åbningstider</h3>
+                <div class="dag-tid">
+                    <div>
+                        <p>Mandag</p>
+                        <p>Tirsdag</p>
+                        <p>Onsdag</p>
+                        <p>Torsdag</p>
+                        <p>Fredag</p>
+                        <p>Lørdag</p>
+                        <p>Søndag</p>
+                    </div>
+                    <div>
+                        <p>15.00 - 23.00</p>
+                        <p>15.00 - 23.00</p>
+                        <p>15.00 - 00.00</p>
+                        <p>14.00 - 01.00</p>
+                        <p>13.00 - 02.00</p>
+                        <p>12.00 - 02.00</p>
+                        <p>15.00 - 23.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sektion">
+                <h3>Tilmeld dig vores</h3>
+                <h3>nyhedsbrev</h3>
+                <form class="footer-email">
+                    <input type="email" id="email" name="email" placeholder="Din email" required>
+                    <button id="tilmeld" type="submit">Tilmeld</button>
+                  </form>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+            // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("luk")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
     
 </body>
 </html>
