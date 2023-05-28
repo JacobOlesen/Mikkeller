@@ -1003,13 +1003,33 @@ margin: 10px;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
+    margin-bottom: 5%;
 
 
+}
+
+#omøl {
+    margin-left: 2%;
 }
 
 .ommikkeller img {
     max-width: 100%;
+    margin-top: 15%;
 }
+
+
+#infografik {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#infografik img {
+
+    max-width: 100%;
+}
+
 
 
 
