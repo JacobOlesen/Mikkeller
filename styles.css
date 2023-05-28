@@ -595,7 +595,7 @@ header {
 
 
   .vl {
-    border-left: 2px solid #29304D;
+    border-left: 2px solid #ED6C1F;
     height: 530px;
     margin-top: 7%;
     padding-right: 8%;
@@ -766,7 +766,6 @@ input[type=text], input[type=password] {
 
 .find-os-content{
     margin: 0 15% 0 15%;
-    margin-bottom: 80px;
 }
 
 #åbningstider{
@@ -1140,6 +1139,50 @@ input[type=text], input[type=password] {
 }
 
 
+
+@media only screen and (max-width: 980px) {
+    .modal-indhold{
+        height: 760px;
+    }
+    
+    .beer-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .beer-stats{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .beer-stats img{
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .beer-pic{
+        display: none;
+    }
+
+    .beer-text p,
+    .beer-text{
+        width: 100%;
+    }
+
+    .beer-bitter{
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
 /* OM MIKKELLER------------------------------*/
 
 
@@ -1164,11 +1207,19 @@ input[type=text], input[type=password] {
     max-width: 100%;
 }
 
+/* ---------- Næste event sektion - Anne ---------- */
+#næste-event{
+    margin-top: 0;
+    padding-top: 150px;
+}
 
+#næste-event h5{
+    font-size: 16pt;
+}
 
 /* ---------- Kommende events sektion - Daniel ---------- */
 #kommende-events{
-    padding-top: 150px;
+    padding-top: 70px;
 }
 
 #kommende-events-banner{
@@ -1248,7 +1299,7 @@ input[type=text], input[type=password] {
 /* ---------- Klubber sektion - Jacob ---------- */
 
 #klubber{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 #klubber h3, #klubber .oel-menu, #klubber .oel-menu div{
     margin-top: 10px;
@@ -1280,6 +1331,8 @@ footer{
     width: 100%;
     height:300px;
     background-color: #29304D;
+
+    margin-top: 80px;
 }
 
 footer h3{
@@ -1294,8 +1347,6 @@ footer p{
 footer h3{
     font-size: 16pt;
 }
-
-
 
 .footer-content{
     display: flex;
@@ -1316,6 +1367,25 @@ footer .dag-tid div{
     margin-right: 20px;
 }
 
+.footer-email input{
+    background-color: #29304D;
+    border: solid #ED6C1F 2px;
+    border-radius: 7px;
+    color: white;
+
+    height: 30px;
+    width: 165px;
+}
+
+.footer-email button{
+    background-color: #ED6C1F;
+    border: solid #ED6C1F 2px;
+    border-radius: 7px;
+
+    height: 30px;
+
+}
+
 
 
 @media only screen and (max-width: 980px) {
@@ -1332,4 +1402,3 @@ footer .dag-tid div{
         margin-bottom: 50px;
     }
 }
-
