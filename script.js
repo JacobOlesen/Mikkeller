@@ -1,3 +1,4 @@
+
 // ----------- Filter funktion på menu siden - Jacob ---------- //
 filterSelection("all")
 function filterSelection(c) {
@@ -196,8 +197,6 @@ const button = document.getElementById('tilmeld');
 button.addEventListener('click', function() {
   alert('Du er nu tilmeldt vores nyhedsbrev :))');
 });
-
-
 
 
 
