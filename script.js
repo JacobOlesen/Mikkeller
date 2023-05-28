@@ -1,26 +1,30 @@
-
 // ----------- Filter funktion på menu siden - Jacob ---------- //
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+// https://www.w3schools.com/howto/howto_js_filter_elements.asp //
+
+/* En meget kompleks kode vi har været meget glade for at få implementeret på vores side.
+  Det var ikke lige til, men vi fik det til at fungere som vi gerne ville have det til.
+  Vi har forsøgt at sætte os grundigt ind i koden og forstår de grundlæggende elementer */
+filterSelection("all") //denne linje sørger for at alle elementerne bliver vist når siden loades //
+function filterSelection(c) { // her får filterselection parameteret "c"//
+  var x, i; // her bliver der erklæret to variabler x og i //
+  x = document.getElementsByClassName("filterDiv"); // Her finder den alle de elementer der har class="filterDiv" //
+  if (c == "all") c = ""; // her tjekker den om "c" viser "all", hvis dette er tilfældet bliver den til en tom string //
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    w3RemoveClass(x[i], "show"); // Sørger for at "show" bliver fjernet fra det viste element, så det næste element kan blive aktiveret //
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show"); // her tjekker den om det valgte element har værdien "c", hvis dette er tilfældet bliver "show" class'en tilføjet til elementet ved brug at w3addclass
   }
 }
 
-function w3AddClass(element, name) {
+function w3AddClass(element, name) { // Dette er funktionen som tilføjer en class til et element på siden //
   var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
+  arr1 = element.className.split(" "); 
+  arr2 = name.split(" "); 
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 }
 
-function w3RemoveClass(element, name) {
+function w3RemoveClass(element, name) { // Dette er funktionen som fjerner en class fra et element på siden
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -32,7 +36,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+// denne del tilføjer en aktiv class, som gør at den kanp som er aktiv bliver highlightet på den måde man styler den til
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = document.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -42,6 +46,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " aktiv";
   });
 }
+
+/* AOS - Eksternt scrolling bibliotek */
+AOS.init();
+
+
+
 
 
 var questions = document.getElementsByClassName('eventOverskrift');
@@ -62,10 +72,6 @@ for (var i = 0; i < questions.length; i++) {
   });
 }
 
-
-
-/* AOS scrolling library */
-AOS.init();
 
 
 
