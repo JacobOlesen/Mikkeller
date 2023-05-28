@@ -278,7 +278,6 @@ header {
 
 /* ---------- Event sektion på forsiden - Jacob ---------- */
 
-
 /* Sektion overskrifter */
 .eventoverskrift{
     display: flex;
@@ -1306,6 +1305,9 @@ input[type=text], input[type=password] {
 }
 #klubber h3{
     font-size: 1.3vw;
+}
+#klubber .eventhenry{
+    height: 50px;
 }
 
 @media only screen and (max-width: 980px) {
