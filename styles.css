@@ -1125,7 +1125,7 @@ input[type=text], input[type=password] {
     font-size: 2.3vw;
 }
 .menu h4{
-    font-size: 1,6vw;
+    font-size: 1.6vw;
 }
 /* placering og margins på div'en */
 .oel-menu{
@@ -1341,17 +1341,22 @@ input[type=text], input[type=password] {
 
 
 
-/* OM MIKKELLER---------- ANNE --------------------*/
-
-
+/* ------------OM MIKKELLER - Anne--------------------*/
 
 #omoverskrift {
     padding-top: 10%;
 }
 
 .ommikkeller {
-    
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
+.ommikkeller-midten{
     display: flex;
     justify-content: center;
     margin-left: 15%;
@@ -1359,17 +1364,91 @@ input[type=text], input[type=password] {
     margin-top: 5%;
     margin-bottom: 5%;
 
+}
 
+.omtekst {
+    width: 60%;
+    margin-right: 2%;
+}
+
+.omtekst p {
+    margin-bottom: 5%;
 }
 
 #omøl {
     margin-left: 2%;
+    width: 60%;
+}
+
+#omøl p{
+    margin-bottom: 5%;
 }
 
 .ommikkeller img {
     max-width: 100%;
     margin-top: 15%;
 }
+
+.ommikkeller-midten img {
+    max-width: 100%;
+    margin-top: 15%;
+
+}
+#infografik {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#infomobil {
+    display: none;
+}
+#infopc{
+    width: 100%;
+}
+
+
+
+
+/* Inofgrafik mobil og pc bytter når den rammer breakpoint */
+@media only screen and (max-width: 980px) {
+    #infomobil{
+        display: block;
+        width: 80%;
+    }
+    #infopc{
+        display: none;
+    }
+    .ommikkeller p{
+        font-size: 12px;
+    }
+    #omøl p{
+        font-size: 12px;
+        
+    }
+    .ommikkeller{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ommikkeller-midten{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .omtekst {
+
+        width: 100%;
+    }
+    #omøl {
+        width: 100%;
+    }
+    #omoverskrift{
+        padding-top: 150px;
+    }
+} 
+
+
+
 
 /* ---------- Næste event sektion - Anne ---------- */
 #næste-event{
@@ -1456,10 +1535,6 @@ input[type=text], input[type=password] {
   }
 
 
-
-
-
-
 /* ---------- Klubber sektion - Jacob ---------- */
 /* Genbrug fra div'erne med øl på menu siden */
 
@@ -1491,17 +1566,7 @@ input[type=text], input[type=password] {
 
 
 
-#infografik {
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
-#infografik img {
-
-    max-width: 100%;
-}
 
 
 
