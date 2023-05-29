@@ -205,6 +205,7 @@ button.addEventListener('click', function() { //Når knappen bliver klikket popp
 });
 
 /* AOS - Eksternt scrolling bibliotek */
+/* https://michalsnik.github.io/aos/ */
 AOS.init();
 
 
