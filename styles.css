@@ -1350,16 +1350,12 @@ input[type=text], input[type=password] {
 }
 
 .ommikkeller {
-    
-
     display: flex;
     justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
-
-
 }
 
 #omøl {
@@ -1378,14 +1374,21 @@ input[type=text], input[type=password] {
     margin-right: 15%;
 }
 
-#infografik img {
+#infomobil {
     display: none;
-    max-width: 100%;
+}
+#infopc{
+    width: 100%;
 }
 
+/* Inofgrafik mobil og pc bytter når den rammer breakpoint */
 @media only screen and (max-width: 980px) {
-    #infografik img{
+    #infomobil{
         display: block;
+        width: 80%;
+    }
+    #infopc{
+        display: none;
     }
 } 
 
