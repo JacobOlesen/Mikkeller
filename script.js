@@ -36,6 +36,8 @@ function w3RemoveClass(element, name) { // Dette er funktionen som fjerner en cl
   element.className = arr1.join(" ");
 }
 
+
+
 // denne del tilføjer en aktiv class, som gør at den kanp som er aktiv bliver highlightet på den måde man styler den til
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = document.getElementsByClassName("btn");
@@ -53,27 +55,27 @@ AOS.init();
 
 
 
-
+// Kilde: ChatGPT - FAQ
+// Der startes med at blive lavet en variabel som linkes til class="eventOverskrift" i html
 var questions = document.getElementsByClassName('eventOverskrift');
 
-// Add click event listeners to each eventOverskrift
+// Herefter bruges addEventListener 'click'
 for (var i = 0; i < questions.length; i++) {
   questions[i].addEventListener('click', function() {
     var dropDown = this.nextElementSibling;
     var arrow = this.querySelector('.arrow');
 
+    // Nu bruges if statementet til at vise dropDown og rotere pilen
     if (dropDown.style.display === 'block') {
       dropDown.style.display = 'none';
       arrow.classList.remove('rotate');
-    } else {
+    } 
+    else { // Nu bruges else statementet til at det omvente af if statmentet oven over
       dropDown.style.display = 'block';
       arrow.classList.add('rotate');
     }
   });
 }
-
-
-
 
 
 

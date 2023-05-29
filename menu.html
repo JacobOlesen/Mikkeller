@@ -8,6 +8,7 @@
         <script src="script.js" defer></script>
         <!-- Font --> <link rel="stylesheet" href="https://use.typekit.net/fwi5coi.css">
         <title>Menu</title>
+        <!-- Logo i browser fane --> <link rel="icon" type="image/x-icon" href="images/favicon.svg">
 
         <!-- Meta text (SEO) --><meta name="description" content="Mikkeller Bar Aarhus er en lille hyggelig bar beliggende på Jægergårdsgade. Med et bredt udvalg af specialøl fra eget brand, er der noget for enhver smag">
         <!-- Meta keywords (SEO) --><meta name="keywords" content="Jægergårdsgade, Bar, Øl, Mikkeller, Hygge, ">
@@ -243,29 +244,29 @@
 
 
      <!--Daniel - Dette stykke JavaScript har vi været nødsaget til at rykke her ind i HTML, eftersom vi ikke kunne fådet til at virke i script.js
-    Vi ved godt at dette ikke er korrekt kodning, dog mente vi at dette stykke kode vil bidrage meger positivt til fores produkt-->
+    Vi ved godt at dette ikke er korrekt kodning, dog mente vi at dette stykke kode vil bidrage meger positivt til vores produkt-->
 
      <script>
-            // Get the modal
+        // Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
         var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
+        // Derefter hentes knappen med ID'et "openModal" og gemmes i en variabel (var) med navnet "btn".
         var btn = document.getElementById("openModal");
 
-        // Get the <span> element that closes the modal
+        // Til sidst hentes et HTML-element med klassenavnet "luk", og det første element gemmes i en variabel med navnet "span".
         var span = document.getElementsByClassName("luk")[0];
 
-        // When the user clicks the button, open the modal 
+        // Når brugeren klikker på knappen, som er blevet gemt i variablen "btn", bliver modal vinduet åbnet, og dens stil attribut ændres til "block". Indtil da har .modal display: none;.
         btn.onclick = function() {
         modal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
+        // Når brugeren klikker på X-knappen i modal vinduet, som er gemt i variablen "span", lukker vinduet og .modal får display: none;.
         span.onclick = function() {
         modal.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
+        // Hvis brugeren klikker et hvilket som helst sted uden for modal vinduet, vil det også lukke, da koden lytter efter klik på vinduet (window.onclick) og lukker modal vinduet, hvis klikket blev udført på elementet med ID'et "myModal".
         window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
