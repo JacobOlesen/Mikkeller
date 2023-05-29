@@ -47,8 +47,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-/* AOS - Eksternt scrolling bibliotek */
-AOS.init();
 
 
 
@@ -206,14 +204,8 @@ button.addEventListener('click', function() { //Når knappen bliver klikket popp
   alert('Du er nu tilmeldt vores nyhedsbrev :))');
 });
 
-
-
-
-
-
-
-
-
+/* AOS - Eksternt scrolling bibliotek */
+AOS.init();
 
 
 
