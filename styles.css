@@ -1351,7 +1351,7 @@ input[type=text], input[type=password] {
 
 
 
-/* OM MIKKELLER------------------------------*/
+/* ------------OM MIKKELLER - Anne--------------------*/
 
 
 
@@ -1372,13 +1372,81 @@ input[type=text], input[type=password] {
 
 }
 
+.ommikkeller-midten{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.omtekst {
+    width: 60%;
+    margin-right: 2%;
+}
+
+.omtekst p {
+    margin-bottom: 5%;
+}
+
 #omøl {
     margin-left: 2%;
+    width: 60%;
+}
+
+#omøl p{
+    margin-bottom: 5%;
 }
 
 .ommikkeller img {
     max-width: 100%;
     margin-top: 15%;
+}
+
+.ommikkeller-midten img {
+    max-width: 100%;
+    margin-top: 15%;
+
+}
+
+@media only screen and (max-width: 1100px){
+    .ommikkeller{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ommikkeller-midten{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .omtekst {
+
+        width: 100%;
+    }
+
+    #omøl {
+        width: 100%;
+    }
+
+  
+
+   
+}
+
+
+@media only screen and (max-width: 1250px){
+
+    .ommikkeller p{
+        font-size: 12px;
+    }
+
+    #omøl p{
+        font-size: 12px;
+        
+    }
 }
 
 /* ---------- Næste event sektion - Anne ---------- */
