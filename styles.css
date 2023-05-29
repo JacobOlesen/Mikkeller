@@ -1377,6 +1377,27 @@ input[type=text], input[type=password] {
     margin-top: 15%;
 }
 
+#infografik {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#infografik img {
+    display: none;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+    #infografik img{
+        display: block;
+    }
+} 
+
+
+
+
 /* ---------- Næste event sektion - Anne ---------- */
 #næste-event{
     margin-top: 0;
@@ -1462,10 +1483,6 @@ input[type=text], input[type=password] {
   }
 
 
-
-
-
-
 /* ---------- Klubber sektion - Jacob ---------- */
 /* Genbrug fra div'erne med øl på menu siden */
 
@@ -1497,17 +1514,7 @@ input[type=text], input[type=password] {
 
 
 
-#infografik {
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
-#infografik img {
-
-    max-width: 100%;
-}
 
 
 
