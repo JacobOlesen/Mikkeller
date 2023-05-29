@@ -155,46 +155,7 @@ var x = setInterval(function() {
 
 // Java til "konkurrence"
 
-// The modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-
-
-//---------MODAL------Tilmeld Nyhedsbrev-------------------------------------------
-
-// Først henter koden elementet med ID'et "myModal" og gemmer det i en variabel (var) med navnet "modal".
-var modal = document.getElementById("myModal");
-
-// Derefter hentes knappen med ID'et "myBtn" og gemmes i en variabel (var) med navnet "btn".
-var btn = document.getElementById("myBtn");
-
-// Til sidst hentes et HTML-element med klassenavnet "close", og det første element gemmes i en variabel med navnet "span".
-var span = document.getElementsByClassName("close")[0];
-
-// Når brugeren klikker på knappen, som er blevet gemt i variablen "btn", bliver modal vinduet åbnet, og dens stil attribut ændres til "block". Indtil da har .modal display: none;.
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// Når brugeren klikker på X-knappen i modal vinduet, som er gemt i variablen "span", lukker vinduet og .modal får display: none;.
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Hvis brugeren klikker et hvilket som helst sted uden for modal vinduet, vil det også lukke, da koden lytter efter klik på vinduet (window.onclick) og lukker modal vinduet, hvis klikket blev udført på elementet med ID'et "myModal".
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
 
